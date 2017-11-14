@@ -1,0 +1,16 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Fri Sep 29 16:50:55 2017
+| Host         : Berna running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'char_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of char_fifo (xilinx.com:ip:fifo_generator:13.1) from (Rev. 1) to (Rev. 4)
+

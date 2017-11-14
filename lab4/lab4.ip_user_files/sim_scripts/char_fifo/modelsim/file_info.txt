@@ -1,0 +1,5 @@
+xpm_cdc.sv,systemverilog,xil_defaultlib,../../../../../../../../XilinxVivado/Vivado/2017.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xil_defaultlib,../../../../../../../../XilinxVivado/Vivado/2017.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../XilinxVivado/Vivado/2017.2/data/ip/xpm/xpm_VCOMP.vhd,
+char_fifo_sim_netlist.v,verilog,xil_defaultlib,../../../ip/char_fifo/char_fifo_sim_netlist.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

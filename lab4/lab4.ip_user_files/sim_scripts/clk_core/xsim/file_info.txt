@@ -1,0 +1,2 @@
+clk_core_sim_netlist.v,verilog,xil_defaultlib,../../../../clk_core/clk_core_sim_netlist.v,incdir="../../../../clk_core"
+glbl.v,Verilog,xil_defaultlib,glbl.v

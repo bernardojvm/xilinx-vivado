@@ -1,0 +1,3 @@
+verilog xil_defaultlib "../../../../clk_core/clk_core_sim_netlist.v" --include "../../../../clk_core"
+verilog xil_defaultlib "glbl.v"
+nosort

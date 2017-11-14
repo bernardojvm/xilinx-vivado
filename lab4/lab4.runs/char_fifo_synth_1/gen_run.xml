@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="char_fifo_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1506696667">
+  <File Type="RDS-PROPCONSTRS" Name="char_fifo_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="char_fifo.tcl"/>
+  <File Type="RDS-RDS" Name="char_fifo.vds"/>
+  <File Type="RDS-UTIL" Name="char_fifo_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="char_fifo_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="char_fifo.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="char_fifo_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="char_fifo_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/char_fifo">
+    <File Path="$PSRCDIR/sources_1/ip/char_fifo/char_fifo.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../2016_2_zynq_sources/lab4/Zybo/ip/char_fifo/char_fifo.xci"/>
+        <Attr Name="ImportTime" Val="1506696589"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/char_fifo.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../2016_2_zynq_sources/lab4/Zybo/ip/char_fifo.xcix"/>
+        <Attr Name="ImportTime" Val="1506696581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="char_fifo"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/char_fifo">
+    <File Path="$PSRCDIR/sources_1/ip/char_fifo/char_fifo.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../2016_2_zynq_sources/lab4/Zybo/ip/char_fifo/char_fifo.xci"/>
+        <Attr Name="ImportTime" Val="1506696589"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/char_fifo.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../2016_2_zynq_sources/lab4/Zybo/ip/char_fifo.xcix"/>
+        <Attr Name="ImportTime" Val="1506696581"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="char_fifo"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

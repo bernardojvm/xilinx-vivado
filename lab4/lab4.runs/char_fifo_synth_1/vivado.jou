@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Sep 29 16:51:10 2017
+# Process ID: 7848
+# Current directory: C:/xup/fpga_flow/2016_2_zynq_labs/lab4/lab4.runs/char_fifo_synth_1
+# Command line: vivado.exe -log char_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source char_fifo.tcl
+# Log file: C:/xup/fpga_flow/2016_2_zynq_labs/lab4/lab4.runs/char_fifo_synth_1/char_fifo.vds
+# Journal file: C:/xup/fpga_flow/2016_2_zynq_labs/lab4/lab4.runs/char_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source char_fifo.tcl -notrace
