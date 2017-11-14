@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../arm_pb.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../arm_pb.srcs/sources_1/new/Rom_Program.vhd"
+vhdl xil_defaultlib  "../../../arm_pb.srcs/sources_1/imports/kcpsm6/kcpsm6.vhd"
+vhdl xil_defaultlib  "../../../arm_pb.srcs/sources_1/imports/kcpsm6/kcpsm6_design_template.vhd"
+
+# Do not sort compile order
+nosort
