@@ -1,0 +1,52 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 70 -defaultsOSRD
+preplace port sws_4bits -pg 1 -y 730 -defaultsOSRD
+preplace port btn -pg 1 -y 50 -defaultsOSRD
+preplace port leds_4bits -pg 1 -y 860 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 90 -defaultsOSRD
+preplace inst switches -pg 1 -lvl 5 -y 730 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 8 -y 260 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 6 -y 180 -defaultsOSRD
+preplace inst axi_cdma_0 -pg 1 -lvl 3 -y 460 -defaultsOSRD
+preplace inst leds -pg 1 -lvl 5 -y 860 -defaultsOSRD
+preplace inst axi_smc_1 -pg 1 -lvl 4 -y 470 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 730 -defaultsOSRD
+preplace inst rst_ps7_0_140M -pg 1 -lvl 5 -y 350 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 7 -y 250 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 650 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 5 -y 500 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -y 120 -defaultsOSRD
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 690
+preplace netloc switches_GPIO 1 5 4 NJ 730 NJ 730 NJ 730 NJ
+preplace netloc processing_system7_0_DDR 1 5 4 NJ 70 NJ 70 NJ 70 NJ
+preplace netloc axi_cdma_0_M_AXI 1 3 1 N
+preplace netloc leds_GPIO 1 5 4 NJ 860 NJ 860 NJ 860 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 7 1 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 390 570 NJ 570 NJ 570 NJ 570 1780
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 370 560 700 550 990 550 1300
+preplace netloc axi_smc_M00_AXI 1 6 1 2080
+preplace netloc processing_system7_0_M_AXI_GP1 1 5 1 1790
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 380 NJ 380 NJ 380 NJ 380 1280 260 1760
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 3 NJ 730 NJ 730 1270
+preplace netloc axi_cdma_0_cdma_introut 1 3 2 970 170 NJ
+preplace netloc axi_smc_1_M01_AXI 1 4 1 N
+preplace netloc processing_system7_0_FIXED_IO 1 5 4 NJ 90 NJ 90 NJ 90 NJ
+preplace netloc rst_ps7_0_140M_peripheral_aresetn 1 5 2 1800 270 N
+preplace netloc axi_smc_1_M00_AXI 1 4 1 1270
+preplace netloc processing_system7_0_GPIO_0 1 5 4 NJ 50 NJ 50 NJ 50 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 30 740 380 540 710 540 980 540 1290 240 1770
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 5 3 NJ 500 NJ 500 2360
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 3 NJ 710 NJ 710 N
+preplace netloc processing_system7_0_FCLK_CLK1 1 4 3 1300 250 1790 250 N
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 N
+levelinfo -pg 1 0 200 540 840 1130 1530 1940 2220 2460 2580 -top 0 -bot 930
+",
+}
+{
+   da_axi4_cnt: "9",
+   da_board_cnt: "2",
+   da_bram_cntlr_cnt: "2",
+   da_ps7_cnt: "1",
+}
