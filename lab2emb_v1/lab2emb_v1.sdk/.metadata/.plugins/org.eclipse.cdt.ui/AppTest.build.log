@@ -1,0 +1,8 @@
+00:38:08 **** Incremental Build of configuration Debug for project AppTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+
+00:38:09 Build Finished (took 375ms)
+

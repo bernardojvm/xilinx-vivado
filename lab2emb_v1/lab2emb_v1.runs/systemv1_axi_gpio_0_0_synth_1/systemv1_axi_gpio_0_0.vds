@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Nov  4 00:18:34 2017
+# Process ID: 12260
+# Current directory: C:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.runs/systemv1_axi_gpio_0_0_synth_1
+# Command line: vivado.exe -log systemv1_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source systemv1_axi_gpio_0_0.tcl
+# Log file: C:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.runs/systemv1_axi_gpio_0_0_synth_1/systemv1_axi_gpio_0_0.vds
+# Journal file: C:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.runs/systemv1_axi_gpio_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source systemv1_axi_gpio_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 392.414 ; gain = 77.957
+INFO: [Synth 8-638] synthesizing module 'systemv1_axi_gpio_0_0' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ip/systemv1_axi_gpio_0_0/synth/systemv1_axi_gpio_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/cb07/hdl/axi_gpio_v2_0_vh_rfs.vhd:1257]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/cb07/hdl/axi_gpio_v2_0_vh_rfs.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/cb07/hdl/axi_gpio_v2_0_vh_rfs.vhd:177]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ipshared/cb07/hdl/axi_gpio_v2_0_vh_rfs.vhd:1257]
+INFO: [Synth 8-256] done synthesizing module 'systemv1_axi_gpio_0_0' (8#1) [c:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.srcs/sources_1/bd/systemv1/ip/systemv1_axi_gpio_0_0/synth/systemv1_axi_gpio_0_0.vhd:84]
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 434.746 ; gain = 120.289
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 434.746 ; gain = 120.289
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 736.680 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:31 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 736.680 ; gain = 422.223
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 736.680 ; gain = 422.223
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     5|
+|3     |LUT3 |     4|
+|4     |LUT4 |     7|
+|5     |LUT5 |    11|
+|6     |LUT6 |    10|
+|7     |FDR  |    16|
+|8     |FDRE |    41|
+|9     |FDSE |     4|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:01:33 . Memory (MB): peak = 736.680 ; gain = 422.223
+synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:38 . Memory (MB): peak = 736.680 ; gain = 429.984

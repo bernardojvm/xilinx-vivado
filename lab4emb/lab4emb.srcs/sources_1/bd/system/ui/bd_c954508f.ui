@@ -1,0 +1,39 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port switches -pg 1 -y 470 -defaultsOSRD
+preplace port DDR -pg 1 -y 380 -defaultsOSRD
+preplace port buttons -pg 1 -y 110 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 400 -defaultsOSRD
+preplace portBus LED -pg 1 -y 600 -defaultsOSRD
+preplace inst led_ip_0 -pg 1 -lvl 3 -y 700 -defaultsOSRD
+preplace inst switches -pg 1 -lvl 3 -y 570 -defaultsOSRD
+preplace inst buttons -pg 1 -lvl 3 -y 110 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 4 -y 310 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 190 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -y 290 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 420 -defaultsOSRD
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 710
+preplace netloc switches_GPIO 1 3 2 1080J 610 1330J
+preplace netloc processing_system7_0_DDR 1 1 4 NJ 380 720J 480 1090J 520 1310J
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 1090J
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 400
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 380 370 750
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 -30 190 370
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 760
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 710
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 400 700J 500 1080J 540 1320J
+preplace netloc buttons_GPIO 1 3 2 NJ 110 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -40 180 390 10 730
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 740
+preplace netloc led_ip_0_LED 1 3 2 1090J 740 1340J
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 N
+levelinfo -pg 1 -60 170 550 920 1210 1360 -top 0 -bot 770
+",
+}
+{
+   da_axi4_cnt: "4",
+   da_bram_cntlr_cnt: "1",
+   da_ps7_cnt: "1",
+}

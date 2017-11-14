@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Nov  4 00:29:08 2017
+# Process ID: 16236
+# Current directory: C:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.runs/impl_1
+# Command line: vivado.exe -log systemv1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source systemv1_wrapper.tcl -notrace
+# Log file: C:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.runs/impl_1/systemv1_wrapper.vdi
+# Journal file: C:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v1/lab2emb_v1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source systemv1_wrapper.tcl -notrace

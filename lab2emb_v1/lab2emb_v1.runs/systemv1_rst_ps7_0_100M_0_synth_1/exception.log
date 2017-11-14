@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\xup\fpga_flow\2016_2_zynq_labs\lab2emb_v1\lab2emb_v1.runs\systemv1_rst_ps7_0_100M_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permiso denegado

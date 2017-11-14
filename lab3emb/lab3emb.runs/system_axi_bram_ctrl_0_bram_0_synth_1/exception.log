@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\xup\fpga_flow\2016_2_zynq_labs\lab3emb\lab3emb.runs\system_axi_bram_ctrl_0_bram_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permiso denegado

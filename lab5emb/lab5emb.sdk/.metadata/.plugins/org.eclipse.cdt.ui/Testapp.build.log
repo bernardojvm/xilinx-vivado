@@ -1,0 +1,8 @@
+13:56:00 **** Auto Build of configuration Debug for project TestApp ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+
+13:56:00 Build Finished (took 368ms)
+

@@ -1,0 +1,8 @@
+18:04:13 **** Auto Build of configuration Debug for project lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+
+18:04:14 Build Finished (took 427ms)
+

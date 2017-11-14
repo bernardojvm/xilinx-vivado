@@ -1,0 +1,9 @@
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v2/lab2emb_v2.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/xup/fpga_flow/2016_2_zynq_labs/lab2emb_v2/lab2emb_v2.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Fri Nov  3 23:33:21 2017. For additional details about this file, please refer to the WebTalk help file at C:/XilinxVivado/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov  3 23:33:21 2017...
