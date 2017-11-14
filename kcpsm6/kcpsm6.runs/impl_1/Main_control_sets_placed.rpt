@@ -1,0 +1,81 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Nov  2 04:23:00 2017
+| Host         : Berna running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Main_control_sets_placed.rpt
+| Design       : Main
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    44 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              52 |           16 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              22 |            8 |
+| Yes          | No                    | No                     |              36 |           10 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              14 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+----------------+
+|                         Clock Signal                         |                                        Enable Signal                                       |                                        Set/Reset Signal                                       | Slice Load Count | Bel Load Count |
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+----------------+
+|  program_rom/instantiate_loader.jtag_loader_6_inst/CLK       |                                                                                            |                                                                                               |                1 |              1 |
+|  clk_IBUF_BUFG                                               | proccesor/flag_enable                                                                      | proccesor/I1                                                                                  |                2 |              2 |
+|  program_rom/instantiate_loader.jtag_loader_6_inst/CLK       |                                                                                            | program_rom/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int[7]_i_1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                                               |                                                                                            | proccesor/active_interrupt                                                                    |                1 |              4 |
+|  clk_IBUF_BUFG                                               | proccesor/led3_reg                                                                         |                                                                                               |                2 |              4 |
+|  clk_IBUF_BUFG                                               |                                                                                            | proccesor/I1                                                                                  |                3 |              6 |
+|  clk_IBUF_BUFG                                               |                                                                                            | program_rom/instruction[7]                                                                    |                3 |              8 |
+|  clk_IBUF_BUFG                                               | proccesor/spm_enable                                                                       |                                                                                               |                2 |              8 |
+|  clk_IBUF_BUFG                                               | proccesor/t_state_0                                                                        | proccesor/I1                                                                                  |                3 |             12 |
+|  program_rom/instantiate_loader.jtag_loader_6_inst/shift_clk | program_rom/instantiate_loader.jtag_loader_6_inst/shift                                    |                                                                                               |                3 |             14 |
+|  clk_IBUF_BUFG                                               | proccesor/register_enable                                                                  |                                                                                               |                2 |             16 |
+|  clk_IBUF_BUFG                                               | proccesor/t_state_0                                                                        |                                                                                               |                2 |             16 |
+|  program_rom/instantiate_loader.jtag_loader_6_inst/shift_clk | program_rom/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.jtag_din_int[17]_i_1_n_0 |                                                                                               |                5 |             18 |
+|  clk_IBUF_BUFG                                               |                                                                                            |                                                                                               |               15 |             51 |
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     1 |
+| 4      |                     3 |
+| 6      |                     1 |
+| 8      |                     2 |
+| 12     |                     1 |
+| 14     |                     1 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+
