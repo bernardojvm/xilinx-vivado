@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1511213626">
+  <File Type="RDS-PROPCONSTRS" Name="Main_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="Main.tcl"/>
+  <File Type="RDS-RDS" Name="Main.vds"/>
+  <File Type="RDS-UTIL" Name="Main_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Main_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Main.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Main_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Main_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Rom_Program.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../arm_pb/arm_pb.srcs/sources_1/new/Rom_Program.vhd"/>
+        <Attr Name="ImportTime" Val="1510027130"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/kcpsm6/kcpsm6.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Users/Bernardo/Dropbox/TFM/picoblaze/kcpsm6/kcpsm6.vhd"/>
+        <Attr Name="ImportTime" Val="1400661852"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/kcpsm6/kcpsm6_design_template.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kcpsm6/kcpsm6.srcs/sources_1/imports/kcpsm6/kcpsm6_design_template.vhd"/>
+        <Attr Name="ImportTime" Val="1507521993"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Main"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/zybo.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Users/Bernardo/Desktop/zybo.xdc"/>
+        <Attr Name="ImportTime" Val="1507508445"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>
