@@ -34,13 +34,13 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity Proccesor is
-            generic(  hwbuild                   : std_logic_vector(7 downto 0) := X"00";
+            generic(  hwbuild                   : std_logic_vector(7 downto 0) := X"41";
                       interrupt_vector          : std_logic_vector(11 downto 0) := X"3FF";
                       scratch_pad_memory_size   : integer := 64);
              port(    address                   : out std_logic_vector(11 downto 0);
                       instruction               : in std_logic_vector(17 downto 0);
-                      bram_enable               : out std_logic;
-                      clk                       : in std_logic;
+                      ram_enable               : out std_logic;
+                      S_AXI_ACLK                       : in std_logic;
                       rnew_data                 : out std_logic;
                       addr_in : in std_logic_vector(1 downto 0);
                       s_axi_rdata	: out std_logic_vector(31 downto 0);
@@ -101,6 +101,7 @@ signal write_strobe :std_logic;
 signal k_write_strobe :std_logic;
 signal read_strobe :std_logic;
 signal interrupt_ack :std_logic;
+signal enable:std_logic;
 
 begin
    in_Areg0 <=  s_axi_wdata(7 downto 0)   when s_axi_wenable = '1' and addr_in = b"00";
@@ -124,7 +125,7 @@ kcpsm6_v1: kcpsm6
                        scratch_pad_memory_size => scratch_pad_memory_size)
         port map(      address => address,
                        instruction => instruction,
-                       bram_enable => bram_enable,                       
+                       bram_enable => enable,                       
                        out_port => out_port,
                        port_id =>port_id,
                        
@@ -138,10 +139,10 @@ kcpsm6_v1: kcpsm6
                        sleep => sleep,
                        reset => reset,
 
-                       clk => clk);
- process (clk)
+                       clk => S_AXI_ACLK);
+ process (S_AXI_ACLK)
  begin
- if rising_edge(clk) then
+ if rising_edge(S_AXI_ACLK) then
     if s_axi_aresetn = '0' then
 	    in_port <= (others => '0');
     else
@@ -178,37 +179,38 @@ kcpsm6_v1: kcpsm6
 end if;                           
 end process;
  
-rnew_data<=rnew_data_temp;                     
-process (clk)
+rnew_data<='1' when port_id = x"FD" else '0';
+                     
+process (S_AXI_ACLK)
  begin
-    if rising_edge(clk) then
+    if rising_edge(S_AXI_ACLK) then
         if s_axi_aresetn = '0' then
-            rnew_data_temp<='0';
             reset     <= '1';
             interrupt <= '0';
             sleep <= '0';
+            ram_enable <= '0';
         else
             if addr_in = b"11" and not(port_id = X"FF") then
-                rnew_data_temp<='1';
                 reset     <= not s_axi_wdata(0);
-                interrupt <= s_axi_wdata(1);
-                sleep     <= s_axi_wdata(2);
+                ram_enable <= '1';
+                interrupt <= s_axi_wdata(2);
+                sleep     <= s_axi_wdata(3);
             elsif port_id = X"FF" then
-                rnew_data_temp<='0';
                 reset     <= '1';
                 interrupt <= '0';
                 sleep     <= '0';
+                ram_enable <= '0';
             end if;
         end if;
  end if;
  end process;      
                             
                      
-s_axi_rdata <= rdata WHEN s_axi_renable='1';
+s_axi_rdata <= rdata;
 
-process(clk)
+process(S_AXI_ACLK)
 begin
-if rising_edge(clk) then
+if rising_edge(S_AXI_ACLK) then
     if s_axi_aresetn = '0' then
       out_reg0  <=  (others => '0');
       out_reg1  <=  (others => '0');
@@ -234,10 +236,10 @@ if rising_edge(clk) then
                              out_reg3 <=  out_port;
                            end if;
             WHEN X"FD" => if (out_reg3 & out_reg2 & out_reg1 & out_reg0) = (in_Creg3 & in_Creg2 & in_Creg1 & in_Creg0) then
-                                rdata_temp<= rdata;-- en elcaso de solicitar el valor de la salida
+                                rdata_temp<= rdata;-- en caso de solicitar el valor de la salida
                           else
-                                rdata_temp<=rdata + '1';--en el caso de 
-                          end if;      
+                                rdata_temp<=rdata + '1';--en el caso de que no coincida 
+                          end if;                                
             WHEN X"FF" => out_reg0 <=  (others => '0');
                           out_reg1 <=  (others => '0');
                           out_reg2 <=  (others => '0');

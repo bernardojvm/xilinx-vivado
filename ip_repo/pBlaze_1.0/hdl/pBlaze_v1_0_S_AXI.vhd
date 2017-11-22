@@ -20,7 +20,7 @@ entity picoBlaze_v1_0_S_AXI is
 		-- Users to add ports here
         address : out std_logic_vector(11 downto 0);
         instruction : in std_logic_vector(17 downto 0);
-        bram_enable : out std_logic;
+        ram_enable : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -89,6 +89,8 @@ end picoBlaze_v1_0_S_AXI;
 
 architecture arch_imp of picoBlaze_v1_0_S_AXI is
     signal rnew_data: std_logic;
+    signal slv_reg_out	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0):=(others => '0');
+    signal slv_reg_tmp	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0):=(others => '0');
 	-- AXI4LITE signals
 	signal axi_awaddr	: std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
 	signal axi_awready	: std_logic;
@@ -128,8 +130,8 @@ component Proccesor is
                                     scratch_pad_memory_size   : integer := 64);
                            port(    address                   : out std_logic_vector(11 downto 0);
                                     instruction               : in std_logic_vector(17 downto 0);
-                                    bram_enable               : out std_logic;
-                                    clk                       : in std_logic;
+                                    ram_enable               : out std_logic;
+                                    S_AXI_ACLK                       : in std_logic;
                                     rnew_data                 : out std_logic;
                                     addr_in : in std_logic_vector(1 downto 0);
                                     s_axi_rdata    : out std_logic_vector(31 downto 0);
@@ -297,7 +299,7 @@ begin
 	      axi_bvalid  <= '0';
 	      axi_bresp   <= "00"; --need to work more on the responses
 	    else
-	      if (axi_awready = '1' and S_AXI_AWVALID = '1' and axi_wready = '1' and S_AXI_WVALID = '1' and axi_bvalid = '0' and rnew_data='0' ) then
+	      if (axi_awready = '1' and S_AXI_AWVALID = '1' and axi_wready = '1' and S_AXI_WVALID = '1' and axi_bvalid = '0') then-- and rnew_data='0'
 	        axi_bvalid <= '1';
 	        axi_bresp  <= "00"; 
 	      elsif (S_AXI_BREADY = '1' and axi_bvalid = '1') then   --check if bready is asserted while bvalid is high)
@@ -386,23 +388,56 @@ begin
 
 	-- Output register or memory read data
 	process( S_AXI_ACLK ) is
+	variable loc_addr :std_logic_vector(OPT_MEM_ADDR_BITS downto 0);
 	begin
 	  if (rising_edge (S_AXI_ACLK)) then
 	    if ( S_AXI_ARESETN = '0' ) then
 	      axi_rdata  <= (others => '0');
 	    else
+	      loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
+	      slv_reg_tmp <= slv_reg_out;
 	      if (slv_reg_rden = '1') then
 	        -- When there is a valid read address (S_AXI_ARVALID) with 
 	        -- acceptance of read address by the slave (axi_arready), 
 	        -- output the read dada 
 	        -- Read address mux
-	          axi_rdata <= reg_data_out;     -- register read data
+            case loc_addr is
+                when b"00" =>
+                        axi_rdata <= reg_data_out;
+                        slv_reg_tmp <= (others => '0');
+                when b"01" =>
+                        axi_rdata  <= slv_reg_out;
+                        slv_reg_tmp <= (others => '0');
+	            when others =>
+                        axi_rdata <= (others => '0');                        
+                end case;
+--           else
+--                axi_rdata <= (others => '0');  
 	      end if;   
 	    end if;
 	  end if;
 	end process;
 
-
+process(rnew_data,S_AXI_ARESETN, axi_araddr, slv_reg_tmp)
+variable flag: std_logic:='0';
+begin   
+    if  S_AXI_ARESETN = '0' then
+        slv_reg_out <= (others => '0');
+    else
+         if rnew_data = '1' and flag= '0' then
+            slv_reg_out <= X"ffffffff";
+            flag:= '1'; 
+         else
+            slv_reg_out <= slv_reg_tmp ;
+            if rnew_data = '1' and flag = '1' then 
+                flag:='1';
+             else 
+                flag:='0';  
+            end if;              
+         end if;
+         
+    end if; 
+end process;
 	-- Add user logic here
 Proccesor_v1: Proccesor
         generic map (  hwbuild => hwbuild, 
@@ -410,9 +445,9 @@ Proccesor_v1: Proccesor
                        scratch_pad_memory_size => scratch_pad_memory_size)
         port map(      address => address,
                        instruction => instruction,
-                       bram_enable => bram_enable,
+                       ram_enable => ram_enable,
                        rnew_data=>rnew_data,  
-                       clk => S_AXI_ACLK,
+                       S_AXI_ACLK => S_AXI_ACLK,
                        addr_in=>s_axi_awaddr(3 downto 2),
                        S_AXI_WDATA	=> s_axi_wdata,
                        S_AXI_WENABLE    => slv_reg_wren,
