@@ -1,0 +1,4 @@
+vhdl xil_defaultlib "../../../bd/system/ipshared/b186/pb_rdy.vhd" 
+vhdl xil_defaultlib "../../../bd/system/ip/system_pb_rdy_0_0/sim/system_pb_rdy_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/system/hdl/system.vhd" 
+nosort

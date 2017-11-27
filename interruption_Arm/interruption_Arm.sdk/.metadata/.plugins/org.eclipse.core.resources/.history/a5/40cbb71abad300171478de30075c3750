@@ -1,0 +1,130 @@
+#include <stdio.h>
+#include "xil_io.h"
+#include "xil_types.h"
+#include "xparameters.h"
+#include "xil_io.h"
+#include "xil_exception.h"
+#include "xscugic.h"
+
+
+XScuGic InterruptController; /* Instance of the Interrupt Controller */
+static XScuGic_Config *GicConfig;/* The configuration parameters of the controller */
+
+void INTERRUPT_Handler1(void *baseaddr_p){
+	print("Push Button was pressed\r\n");
+}
+
+
+
+int ScuGicInterrupt_Init()
+{
+	int Status;
+	/*
+	 * Initialize the interrupt controller driver so that it is ready to
+	 * use.
+	 * */
+	Xil_ExceptionInit();
+
+	GicConfig = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+	if (NULL == GicConfig) {
+		return XST_FAILURE;
+	}
+
+	Status = XScuGic_CfgInitialize(&InterruptController, GicConfig,
+			GicConfig->CpuBaseAddress);
+
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Setup the Interrupt System
+	 * */
+
+	/*
+	 * Connect the interrupt controller interrupt handler to the hardware
+	 * interrupt handling logic in the ARM processor.
+	 */
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_IRQ_INT,
+			(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+			(void *) &InterruptController);
+
+
+	/*
+	 * Connect a device driver handler that will be called when an
+	 * interrupt for the device occurs, the device driver handler performs
+	 * the specific interrupt processing for the device
+	 * since the xparameters.h file doesnt detect the external interrupts, we have to manually
+	 * use the IRQ_F2P port numbers ; 91, 90, ect..
+	 */
+
+	Status = XScuGic_Connect(&InterruptController,61,
+			(Xil_ExceptionHandler)INTERRUPT_Handler0,
+			(void *)&InterruptController);
+
+
+	XScuGic_Enable(&InterruptController, 61);
+
+
+	/*
+	 * Enable interrupts in the ARM
+	 */
+	Xil_ExceptionEnable();
+
+
+
+	XScuGic_SetPriorityTriggerType(&InterruptController, 91,
+						0xa0, 3);
+
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+}
+
+
+int main()
+{
+	int xstatus;
+
+	/* SLCR unlock */
+	//Xil_Out32(SLCR_UNLOCK_ADDR, SLCR_UNLOCK_KEY_VALUE);
+
+    /* SLCR Enabling Level shifting */
+    //Xil_Out32(SLCR_LVL_SHFTR_EN_ADDR, SLCR_LVL_SHFTR_EN_VALUE);
+    /* SLCR clearing PL Reset */
+    //Xil_Out32(SLCR_FPGA_RST_CTRL_ADDR, 0x0);
+    //Xil_Out32(SLCR_FPGA_RST_CTRL_ADDR, 0xf);
+    //Xil_Out32(SLCR_FPGA_RST_CTRL_ADDR, 0x0);
+
+    /* SLCR lock */
+    //Xil_Out32(SLCR_LOCK_ADDR, SLCR_LOCK_KEY_VALUE);
+
+
+
+      /*
+       * Interrupt Test
+      */
+
+
+	xstatus = ScuGicInterrupt_Init();
+
+	if (xstatus != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	//Wait For interrupt;
+
+	print("Wait for the interrupt to trigger \r\n");
+	print("########################################\r\n");
+	print(" \r\n");
+
+	while(1)
+	{
+	}
+
+	return 0;
+}
+
+
+

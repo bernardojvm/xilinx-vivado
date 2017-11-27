@@ -1,0 +1,8 @@
+05:34:09 **** Incremental Build of configuration Debug for project main ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: *** No hay ninguna regla para construir el objetivo `lab.o', necesario para `main.elf'.  Alto.
+
+05:34:09 Build Finished (took 610ms)
+

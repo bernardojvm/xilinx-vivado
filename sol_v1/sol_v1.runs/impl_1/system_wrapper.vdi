@@ -1,0 +1,697 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Nov 27 22:42:35 2017
+# Process ID: 11832
+# Current directory: C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1
+# Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+# Log file: C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/system_wrapper.vdi
+# Journal file: C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/fpga_flow/2016_2_zynq_labs/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/fpga_flow/2016_2_zynq_labs/pb_rdy/pb_rdy.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XilinxVivado/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_auto_pc_0/stats.txt'. Please regenerate to continue.
+add_files: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 384.625 ; gain = 90.191
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_0/system_axi_bram_ctrl_0_0.dcp' for cell 'system_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_bram_1/system_axi_bram_ctrl_0_bram_1.dcp' for cell 'system_i/axi_bram_ctrl_0_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_cdma_0_0/system_axi_cdma_0_0.dcp' for cell 'system_i/axi_cdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.dcp' for cell 'system_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_smc_1/system_axi_smc_1.dcp' for cell 'system_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_pBlaze_0_1/system_pBlaze_0_1.dcp' for cell 'system_i/pBlaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_pb_rdy_0_1/system_pb_rdy_0_1.dcp' for cell 'system_i/pb_rdy_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/system_xlconcat_0_0.dcp' for cell 'system_i/xlconcat_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 461 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_cdma_0_0/system_axi_cdma_0_0.xdc] for cell 'system_i/axi_cdma_0/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_cdma_0_0/system_axi_cdma_0_0.xdc] for cell 'system_i/axi_cdma_0/U0'
+Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0_board.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0_board.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/axi_gpio_1/U0'
+Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/axi_gpio_1/U0'
+Parsing XDC File [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[3]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[7]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[5]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[1]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[2]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[6]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[4]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[0]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset0'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset_reg_n_0'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/reset_reg'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset_reg_n_0'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:186]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:186]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_5'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_1'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_0'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_4'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_3'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_2'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:199]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:199]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_6'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_7'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[0]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[1]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[2]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[3]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[4]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[5]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[6]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[7]'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/reset_reg'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:207]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:207]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset0'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:211]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:211]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_0'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:213]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:213]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_1'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:214]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:214]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_2'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:215]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:215]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_3'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:216]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:216]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_4'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:217]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:217]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_5'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:218]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:218]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_6'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:219]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:219]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_7'. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:220]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc:220]
+Finished Parsing XDC File [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.srcs/constrs_1/imports/Desktop/zybo.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 347 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 50 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 286 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 8 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+
+link_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 736.535 ; gain = 351.910
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 738.664 ; gain = 2.129
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-318] Generating core instance : dbg_hub
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "7b29c67c0a29971e".
+INFO: [Chipscope 16-318] Generating core instance : u_ila_0
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:ila:6.2", from Vivado IP cache entry "10908fb7ca24e073".
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.419 . Memory (MB): peak = 1301.504 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 105a59d25
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:02:50 . Memory (MB): peak = 1301.504 ; gain = 60.223
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 25 inverter(s) to 133 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: e8f30a8f
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:03:09 . Memory (MB): peak = 1328.117 ; gain = 86.836
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 128 cells
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 10 load pin(s).
+Phase 3 Constant propagation | Checksum: 16cf97561
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:03:15 . Memory (MB): peak = 1328.117 ; gain = 86.836
+INFO: [Opt 31-389] Phase Constant propagation created 117 cells and removed 1208 cells
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: af95cab1
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:03:21 . Memory (MB): peak = 1328.117 ; gain = 86.836
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 1037 cells
+
+Phase 5 BUFG optimization
+Phase 5 BUFG optimization | Checksum: af95cab1
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:03:22 . Memory (MB): peak = 1328.117 ; gain = 86.836
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: af95cab1
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:03:22 . Memory (MB): peak = 1328.117 ; gain = 86.836
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1328.117 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: af95cab1
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:03:23 . Memory (MB): peak = 1328.117 ; gain = 86.836
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 22 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 7 WE to EN ports
+Number of BRAM Ports augmented: 7 newly gated: 7 Total Ports: 44
+Ending PowerOpt Patch Enables Task | Checksum: 11465aef9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.217 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 11465aef9
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1552.570 ; gain = 224.453
+55 Infos, 39 Warnings, 31 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:18 ; elapsed = 00:04:01 . Memory (MB): peak = 1552.570 ; gain = 816.035
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.317 . Memory (MB): peak = 1552.570 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/system_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Command: report_drc -file system_wrapper_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1552.570 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.131 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 20521cfd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.230 . Memory (MB): peak = 1552.570 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 270829c4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1323083b0
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1323083b0
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1323083b0
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1d22f1be4
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:37 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1d22f1be4
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:37 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f0c3dff6
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:41 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1cfa2cd00
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:41 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 211c5e5f6
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:41 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 204ad26c1
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:42 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1f99dfa57
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:51 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 164c971be
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:52 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 164c971be
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:53 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 164c971be
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:53 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1b057ca3e
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1b057ca3e
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:00 . Memory (MB): peak = 1552.570 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.810. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 12bb18f06
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:00 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 12bb18f06
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:01 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 12bb18f06
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:01 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 12bb18f06
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:01 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 187a56c6b
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:01 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 187a56c6b
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:02 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Ending Placer Task | Checksum: 11629caf5
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:02 . Memory (MB): peak = 1552.570 ; gain = 0.000
+74 Infos, 39 Warnings, 31 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:06 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 1552.570 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/system_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1552.570 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.407 . Memory (MB): peak = 1552.570 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.508 . Memory (MB): peak = 1552.570 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 4e20f8a8 ConstDB: 0 ShapeSum: c808d24d RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 14fb60d4c
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 14fb60d4c
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 14fb60d4c
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 14fb60d4c
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1552.570 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 120525cb3
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:32 . Memory (MB): peak = 1552.570 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.928  | TNS=0.000  | WHS=-0.221 | THS=-613.905|
+
+Phase 2 Router Initialization | Checksum: 3fb578dd
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:36 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1a6f22707
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:40 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1384
+ Number of Nodes with overlaps = 124
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.611  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 258a7b65e
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:55 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.597  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 13aff9f13
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:00 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 13aff9f13
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:00 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 13aff9f13
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:00 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 13aff9f13
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:00 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 13aff9f13
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:01 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 131022f81
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:03 . Memory (MB): peak = 1552.570 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.712  | TNS=0.000  | WHS=0.016  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1c04b93bd
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:03 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 1c04b93bd
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:03 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 6.91301 %
+  Global Horizontal Routing Utilization  = 9.77022 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 2007b58e6
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:03 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2007b58e6
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:04 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 2077375ef
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:01:06 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.712  | TNS=0.000  | WHS=0.016  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 2077375ef
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:01:06 . Memory (MB): peak = 1552.570 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:01:06 . Memory (MB): peak = 1552.570 ; gain = 0.000
+
+Routing Is Done.
+87 Infos, 39 Warnings, 31 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:12 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 1552.570 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/system_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Command: report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Command: report_methodology -file system_wrapper_methodology_drc_routed.rpt -rpx system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1552.570 ; gain = 0.000
+Command: report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+94 Infos, 39 Warnings, 31 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1603.574 ; gain = 51.004
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 22:51:20 2017...
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Nov 27 23:09:39 2017
+# Process ID: 10312
+# Current directory: C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1
+# Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+# Log file: C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/system_wrapper.vdi
+# Journal file: C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+Command: open_checkpoint system_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 232.199 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 713 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/.Xil/Vivado-10312-Berna/dcp3/system_wrapper_board.xdc]
+Finished Parsing XDC File [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/.Xil/Vivado-10312-Berna/dcp3/system_wrapper_board.xdc]
+Parsing XDC File [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/.Xil/Vivado-10312-Berna/dcp3/system_wrapper_early.xdc]
+Finished Parsing XDC File [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/.Xil/Vivado-10312-Berna/dcp3/system_wrapper_early.xdc]
+Parsing XDC File [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/.Xil/Vivado-10312-Berna/dcp3/system_wrapper.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/.Xil/Vivado-11832-Berna/dbg_hub_CV.0/out/xsdbm.xdc:11]
+get_clocks: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1170.559 ; gain = 513.332
+Finished Parsing XDC File [C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/.Xil/Vivado-10312-Berna/dcp3/system_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1200.746 ; gain = 16.098
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1200.746 ; gain = 16.098
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 469 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 268 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 41 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 157 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.2 (64-bit) build 1909853
+open_checkpoint: Time (s): cpu = 00:00:42 ; elapsed = 00:00:57 . Memory (MB): peak = 1200.746 ; gain = 975.188
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+Command: write_bitstream -force system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command write_bitstream
+Command: report_drc (run_mandatory_drcs) for: bitstream_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/axi_rvalid03_out is a gated clock net sourced by a combinational pin system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/s_axi_rdata_reg[31]_i_2/O, cell system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/s_axi_rdata_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg00__0 is a gated clock net sourced by a combinational pin system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg00/O, cell system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg00. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Breg0_reg[7]_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Breg0_reg[7]_i_1/O, cell system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Breg0_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Creg00__0 is a gated clock net sourced by a combinational pin system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Creg00/O, cell system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Creg00. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC RTSTAT-10] No routable loads: 27 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_flags[7:0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14], u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[15]... and (the first 15 of 18 listed).
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 5 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./system_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'C:/xup/fpga_flow/2016_2_zynq_labs/sol_v1/sol_v1.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Nov 27 23:11:34 2017. For additional details about this file, please refer to the WebTalk help file at C:/XilinxVivado/Vivado/2017.2/doc/webtalk_introduction.html.
+17 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:52 ; elapsed = 00:00:45 . Memory (MB): peak = 1600.570 ; gain = 399.824
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 23:11:35 2017...

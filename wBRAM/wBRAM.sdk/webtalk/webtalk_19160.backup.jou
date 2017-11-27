@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Tue Nov  7 02:25:23 2017
+# Process ID: 19160
+# Current directory: C:/xup/fpga_flow/2016_2_zynq_labs/lab4aes/lab4aes.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/xup/fpga_flow/2016_2_zynq_labs/lab4aes/lab4aes.sdk/webtalk/webtalk.log
+# Journal file: C:/xup/fpga_flow/2016_2_zynq_labs/lab4aes/lab4aes.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
