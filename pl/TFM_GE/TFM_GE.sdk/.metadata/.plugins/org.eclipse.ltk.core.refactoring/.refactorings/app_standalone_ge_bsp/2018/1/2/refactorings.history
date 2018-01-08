@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;pBlaze_v1_0&apos; to &apos;libsrc&apos;" description="Move &apos;pBlaze_v1_0&apos; to &apos;libsrc&apos;" destination="ps7_cortexa9_0/libsrc" element1="/system_wrapper_hw_platform_0/drivers/pBlaze_v1_0" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1515403855929" updateReferences="true"/>
+</session>

@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/xup/fpga_flow/TFMV2/pblaze_s/pblaze_s.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mult_gen_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/xup/fpga_flow/TFMV2/pblaze_s/pblaze_s.srcs/sources_1/imports/hdl/CONSTANTES.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/xup/fpga_flow/TFMV2/pblaze_s/pblaze_s.srcs/sources_1/imports/hdl/Cordic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cordic
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/xup/fpga_flow/TFMV2/pblaze_s/pblaze_s.srcs/sources_1/imports/src/kcpsm6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity kcpsm6
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/xup/fpga_flow/TFMV2/pblaze_s/pblaze_s.srcs/sources_1/imports/src/Proccessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Processor

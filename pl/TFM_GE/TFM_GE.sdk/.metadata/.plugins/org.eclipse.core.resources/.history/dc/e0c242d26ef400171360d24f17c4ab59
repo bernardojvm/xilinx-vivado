@@ -1,0 +1,352 @@
+/*
+ * Copyright (c) 2012 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <unistd.h>
+#include <string.h>
+
+#include <sys/ioctl.h> /* ioctl */
+
+
+#include "cdma.h"
+#include "ROM.h"
+#include "pblaze.h"
+
+
+
+// The purpose this test is to show that users can get to devices in user
+// mode .This is not to say this should replace a kernel driver, but does
+// provide some short term solutions sometimes
+// or a debug solution that can be helpful.
+
+#define BUFFER_BYTESIZE		140	// Length of the buffers for DMA transfer
+
+int memfd;
+void *mapped_base, *mapped_dev_base;
+off_t dev_base = CDMA_BASE_ADDRESS; //DIRECCION FISICA DEL CDMA
+int memfd_1;
+void *mapped_base_1, *mapped_dev_base_1;
+off_t dev_base_1 = DDR_BASE_ADDRESS; //DIRECCION FISICA DEL DDR
+
+unsigned int TimeOut =5;
+unsigned int ResetMask;
+unsigned int RegValue;
+unsigned int SrcArray[BUFFER_BYTESIZE];//BUFFER DE LA FUENTE
+unsigned int DestArray[BUFFER_BYTESIZE];//BUFFER DEL DESTINO
+unsigned int Index;
+
+int cdma_init();
+void cdma_transfer(unsigned int ADDRESS_SRC, unsigned int ADDRESS_DEST,int buffer_size);
+void write_read_pblaze(struct file *file,unsigned int ioctl_num, int buffer_int,int buffer_size,int option);
+
+//long device_ioctl(struct file *file, /* ditto *///SELECCIONAR EL REGISTRO A ESCRIBIR
+//		  unsigned int ioctl_num, /* number and param for ioctl */
+//		  unsigned long ioctl_param)
+
+
+void cdma_close();
+void write_read_ddr(unsigned int *Array, int buffer_size, int option);
+int main(){
+	unsigned long  data_value;
+//	char pblaze_value[16];
+//	sprintf(pblaze_value, "%x",data_value);
+//	data_value = strtoul(pblaze_value, NULL, 0);
+//	printf("hola mundo,%x,%d",data_value,data_value);
+
+/*======================================================================================
+STEP 1 : Initialize the source buffer bytes with a pattern  and clear the Destination
+location
+========================================================================================*/
+	for (Index = 0; Index < (BUFFER_BYTESIZE); Index++){
+		SrcArray[Index] = instruction[Index]/*Index & 0xFF*/;
+		DestArray[Index] = 0;
+	}
+	write_read_ddr(SrcArray,BUFFER_BYTESIZE, 0);
+
+	cdma_init();
+	cdma_transfer(DDR_BASE_ADDRESS,DDR_BASE_WRITE_ADDRESS0,BUFFER_BYTESIZE);
+	cdma_transfer(DDR_BASE_ADDRESS,DDR_BASE_WRITE_ADDRESS1,BUFFER_BYTESIZE);
+	cdma_transfer(DDR_BASE_ADDRESS,DDR_BASE_WRITE_ADDRESS2,BUFFER_BYTESIZE);
+	cdma_transfer(DDR_BASE_ADDRESS,DDR_BASE_WRITE_ADDRESS3,BUFFER_BYTESIZE);
+	write_read_ddr(DestArray,BUFFER_BYTESIZE, 0);
+	int file_desc;
+	int ret_val,ret_in,ret_out;
+	char buffer[4],buffer2[4];
+	int buffer_int;
+
+	file_desc = open(DEVICE_FILE_NAME, O_RDWR | O_SYNC);
+	if (file_desc < 0)
+	{
+		printf("Can't open device file: %s\n", DEVICE_FILE_NAME);
+		exit(-1);
+	}
+		ret_val = ioctl(file_desc, IOCTL_CTRL_REG, NULL);
+		if (ret_val < 0)
+		{
+			printf("ioctl_pBlaze failed:%d\n", ret_val);
+			exit(-1);
+		}
+		buffer_int=0x0;
+		sprintf(buffer2, "%x",buffer_int);
+		ret_val = write (file_desc,&buffer_int, (ssize_t)8);
+
+		ret_val = ioctl(file_desc, IOCTL_REG_A, NULL);
+		if (ret_val < 0)
+		{
+			printf("ioctl_pBlaze failed:%d\n", ret_val);
+			exit(-1);
+		}
+		buffer_int=0x4000;
+		sprintf(buffer2, "%x",buffer_int);
+		  ret_val = write (file_desc, &buffer2,(ssize_t)8);
+		if (ret_val < 0)
+		  {
+			printf("write failed:%d\n", ret_val);
+			exit(-1);
+		}
+		ret_val = ioctl(file_desc, IOCTL_REG_B, NULL);
+		if (ret_val < 0)
+		{
+			printf("ioctl_pBlaze failed:%d\n", ret_val);
+			exit(-1);
+		}
+		buffer_int=0x2000;
+		sprintf(buffer2, "%x",buffer_int);
+		ret_val = write (file_desc,&buffer2,(ssize_t)8);
+		if (ret_val < 0)
+		{
+			printf("write failed:%d\n", ret_val);
+			exit(-1);
+		}
+		ret_val = ioctl(file_desc, IOCTL_REG_R, NULL);
+		if (ret_val < 0)
+		{
+			printf("ioctl_pBlaze failed:%d\n", ret_val);
+			exit(-1);
+		}
+		buffer_int=0x1;
+		sprintf(buffer2, "%x",buffer_int);
+		ret_val = write (file_desc,&buffer2,(ssize_t)8);
+		if (ret_val < 0)
+		{
+			printf("write failed:%d\n", ret_val);
+			exit(-1);
+		}
+		ret_val = ioctl(file_desc, IOCTL_CTRL_REG, NULL);
+		if (ret_val < 0)
+		{
+			printf("ioctl_pBlaze failed:%d\n", ret_val);
+			exit(-1);
+		}
+		buffer_int=0X3;
+		sprintf(buffer2, "%x",buffer_int);
+		ret_val = write (file_desc,&buffer2, (ssize_t)8);
+		if (ret_val < 0)
+		{
+			printf("write failed:%d\n", ret_val);
+			exit(-1);
+		}
+
+
+		ret_val = ioctl(file_desc, IOCTL_REG_A,0);
+		if (ret_val < 0)
+		{
+			printf("ioctl_pBlaze failed:%d\n", ret_val);
+			exit(-1);
+		}
+		printf("Procesando pblaze....\n\r");
+		ret_val = read(file_desc, &buffer, (ssize_t)8);
+		if (ret_val < 0)
+		{
+			printf("read failed:%x\n", ret_val);
+			exit(-1);
+		}
+		data_value = strtoul(buffer, NULL, 16);
+		printf(" Resultado: 0x%x, %.2f \n\r",data_value,(float)data_value/4096);
+		cdma_transfer(DDR_BASE_WRITE_ADDRESS0,DDR_BASE_ADDRESS,132);
+		write_read_ddr(DestArray,4, 1);
+		printf("Valor final memoria pbm1: %.2f \r\n",((float)DestArray[0]/4096));
+		cdma_transfer(DDR_BASE_WRITE_ADDRESS1,DDR_BASE_ADDRESS,4);
+		write_read_ddr(DestArray,4, 1);
+		printf("Valor final memoria pbm1: %.2f \r\n",((float)DestArray[0]/4096));
+		cdma_transfer(DDR_BASE_WRITE_ADDRESS2,DDR_BASE_ADDRESS,4);
+		write_read_ddr(DestArray,4, 1);
+		printf("Valor final memoria pbm1: %.2f \r\n",((float)DestArray[0]/4096));
+		cdma_transfer(DDR_BASE_WRITE_ADDRESS3,DDR_BASE_ADDRESS,4);
+		write_read_ddr(DestArray,4, 1);
+		printf("Valor final memoria pbm1: %.2f \r\n",((float)DestArray[0]/4096));
+		printf("Final\n\r");
+		cdma_close();
+		close(file_desc);
+	return 0;
+
+
+}
+
+int cdma_init(){
+  	/*======================================================================================
+  	STEP 5 : Map the AXI CDMA Register memory to the User layer
+  			Do the Register Setting for DMA transfer
+  	========================================================================================*/
+    memfd = open("/dev/mem", O_RDWR | O_SYNC);
+    if (memfd == -1)
+    {
+    	printf("Can't open /dev/mem.\n");
+    	exit(0);
+    }
+      printf("/dev/mem opened.\n");
+    // Map one page of memory into user space such that the device is in that page, but it may not
+    // be at the start of the page.
+    mapped_base = mmap(0, MAP_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd, dev_base & ~MAP_MASK);
+    if (mapped_base == (void *) -1)
+    {
+    	  printf("Can't map the memory to user space.\n");
+    	  exit(0);
+      }
+    // get the address of the device in user space which will be an offset from the base
+    // that was mapped as memory is mapped at the start of a page
+    mapped_dev_base = mapped_base + (dev_base & MAP_MASK);
+    //Reset CDMA
+      do{//INTENTA RESETEAR EL DMA HASTA EN 5 OPORTUNIDADES
+    	  	  ResetMask = (unsigned long )XAXICDMA_CR_RESET_MASK;
+ 			*((volatile unsigned long *) (mapped_dev_base + XAXICDMA_CR_OFFSET)) = (unsigned long)ResetMask;
+			/* If the reset bit is still high, then reset is not done	*/
+			ResetMask = *((volatile unsigned long *) (mapped_dev_base + XAXICDMA_CR_OFFSET));
+			if(!(ResetMask & XAXICDMA_CR_RESET_MASK))
+			{
+				break;
+			}
+			TimeOut -= 1;
+      }while (TimeOut);
+      	//enable Interrupt
+      RegValue = *((volatile unsigned long *) (mapped_dev_base + XAXICDMA_CR_OFFSET));
+      RegValue = (unsigned long)(RegValue | XAXICDMA_XR_IRQ_SIMPLE_ALL_MASK );//XAXICDMA_XR_IRQ_SIMPLE_ALL_MASK
+      *((volatile unsigned long *) (mapped_dev_base + XAXICDMA_CR_OFFSET)) = (unsigned long)RegValue;
+      // Checking for the Bus Idle
+      RegValue = *((volatile unsigned long *) (mapped_dev_base + XAXICDMA_SR_OFFSET));
+      if(!(RegValue & XAXICDMA_SR_IDLE_MASK))
+      {
+    	  printf("BUS IS BUSY Error Condition \n\r");
+    	  return 1;
+      }
+      // Check the DMA Mode and switch it to simple mode
+      RegValue = *((volatile unsigned long *) (mapped_dev_base + XAXICDMA_CR_OFFSET));
+      if((RegValue & XAXICDMA_CR_SGMODE_MASK))
+      {
+    	  RegValue = (unsigned long)(RegValue & (~XAXICDMA_CR_SGMODE_MASK));
+    	  printf("Reading \n \r");
+    	  *((volatile unsigned long *) (mapped_dev_base + XAXICDMA_CR_OFFSET)) = (unsigned long)RegValue ;
+
+      }
+      return 0;
+
+}
+
+void cdma_transfer(unsigned int ADDRESS_SRC,unsigned int ADDRESS_DEST,int buffer_size){
+
+	*((volatile unsigned long *) (mapped_dev_base + XAXICDMA_SRCADDR_OFFSET)) = (unsigned long)ADDRESS_SRC;
+	      //Set the Destination Address
+	      *((volatile unsigned long *) (mapped_dev_base + XAXICDMA_DSTADDR_OFFSET)) = (unsigned long)ADDRESS_DEST;
+	      RegValue = (unsigned long)(buffer_size);
+	      // write Byte to Transfer
+	      *((volatile unsigned long *) (mapped_dev_base + XAXICDMA_BTT_OFFSET)) = (unsigned long)RegValue;
+	    	/*======================================================================================
+	    	STEP 6 : Wait for the DMA transfer Status
+	    	========================================================================================*/
+	      do
+	      {
+	    	 	  RegValue = *((volatile unsigned long *) (mapped_dev_base + XAXICDMA_SR_OFFSET));
+	      }while(!(RegValue & XAXICDMA_XR_IRQ_SIMPLE_ALL_MASK));
+
+	      if((RegValue & XAXICDMA_XR_IRQ_IOC_MASK))
+	      {
+	    	  printf("Transfer Completed \n\r ");
+	      }
+	      if((RegValue & XAXICDMA_XR_IRQ_DELAY_MASK))
+	      {
+	      	printf("IRQ Delay Interrupt\n\r ");
+	      }
+	      if((RegValue & XAXICDMA_XR_IRQ_ERROR_MASK))
+	      {
+	      	printf("Transfer Error Interrupt\n\r ");
+			cdma_close();
+	      }
+}
+
+void cdma_close(){
+	      /*======================================================================================
+	       STEP 7 : Un-map the AXI CDMA memory from the User layer.
+	      ========================================================================================*/
+	      if (munmap(mapped_base, MAP_SIZE) == -1)
+	      {
+	      		printf("Can't unmap memory from user space.\n");
+	      		exit(0);
+	      }
+	      close(memfd);
+}
+
+void write_read_ddr(unsigned int *Array, int buffer_size, int option){// 0 write 1 read
+  	/*======================================================================================
+  	STEP 2 : Map the kernel memory location starting from 0x20000000 to the User layer
+  	========================================================================================*/
+	    memfd_1 = open("/dev/mem", O_RDWR | O_SYNC);
+	    if (memfd_1 == -1)
+	    {
+	    	printf("Can't open /dev/mem.\n");
+	        exit(0);
+	    }
+	    printf("/dev/mem opened.\n");
+	    // Map one page of memory into user space such that the device is in that page, but it may not
+	    // be at the start of the page.
+	    //MMAP(0, TAMANO, CONFIGURACION, ,DIRECCION FISICA)
+	    mapped_base_1 = mmap(0, DDR_MAP_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd_1, dev_base_1 & ~DDR_MAP_MASK);
+	    if (mapped_base_1 == (void *) -1)
+	    {
+	    	printf("Can't map the memory to user space.\n");
+	        exit(0);
+	    }
+	    printf("Memory mapped at address %p.\n", mapped_base_1);
+	    // get the address of the device in user space which will be an offset from the base
+	    // that was mapped as memory is mapped at the start of a page
+	     mapped_dev_base_1 = mapped_base_1 + (dev_base_1 & DDR_MAP_MASK);
+	     /*======================================================================================
+	     STEP 3 : Copy the Data to the DDR Memory
+	     ========================================================================================*/
+	     if(option==0){
+	     memcpy(mapped_dev_base_1, Array,buffer_size);}
+	     else{
+	     memcpy(Array, mapped_dev_base_1, buffer_size);}
+	     printf("VALOR %.2f\n",(float) Array[0]/4096);
+	    /*======================================================================================
+	     STEP 4 : Un-map the kernel memory from the User layer.
+	    ========================================================================================*/
+	     if (munmap(mapped_base_1, DDR_MAP_SIZE) == -1)
+	         {
+	         	printf("Can't unmap memory from user space.\n");
+	         	exit(0);
+	         }
+	         close(memfd_1);
+
+}
+

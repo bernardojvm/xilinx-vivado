@@ -1,0 +1,8 @@
+06:56:04 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para 'main-build'.
+
+06:56:04 Build Finished (took 399ms)
+

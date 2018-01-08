@@ -1,0 +1,130 @@
+
+*** Running vivado
+    with args -log system_axi_smc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_smc_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_axi_smc_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 380.969 ; gain = 95.191
+INFO: [Synth 8-638] synthesizing module 'system_axi_smc_0' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/synth/system_axi_smc_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hdl/bd_44e3.v:13]
+INFO: [Synth 8-638] synthesizing module 'clk_map_imp_1LX95IS' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hdl/bd_44e3.v:721]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_one_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_39/synth/bd_44e3_one_3.v:57]
+INFO: [Synth 8-638] synthesizing module 'xlconstant_v1_1_3_xlconstant' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/45df/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant_v1_1_3_xlconstant' (1#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/45df/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_one_3' (2#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_39/synth/bd_44e3_one_3.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_psr_aclk_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_40/synth/bd_44e3_psr_aclk_3.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/5db7/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/5db7/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [C:/XILINX/Vivado/2017.2/scripts/rt/data/unisim_comp.v:43657]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (3#1) [C:/XILINX/Vivado/2017.2/scripts/rt/data/unisim_comp.v:43657]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/5db7/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/5db7/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/5db7/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/5db7/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/5db7/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ipshared/5db7/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_psr_aclk_3' (9#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_40/synth/bd_44e3_psr_aclk_3.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'clk_map_imp_1LX95IS' (10#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hdl/bd_44e3.v:721]
+INFO: [Synth 8-638] synthesizing module 'm00_exit_pipeline_imp_B7U41B' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hdl/bd_44e3.v:765]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_m00e_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_51/synth/bd_44e3_m00e_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_m00e_3' (34#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_51/synth/bd_44e3_m00e_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'm00_exit_pipeline_imp_B7U41B' (35#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hdl/bd_44e3.v:765]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_m00s2a_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_50/synth/bd_44e3_m00s2a_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_m00s2a_3' (37#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_50/synth/bd_44e3_m00s2a_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_s00a2s_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_44/synth/bd_44e3_s00a2s_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_s00a2s_3' (39#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_44/synth/bd_44e3_s00a2s_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 's00_entry_pipeline_imp_1BIQ3N0' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hdl/bd_44e3.v:1066]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_s00mmu_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_41/synth/bd_44e3_s00mmu_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_s00mmu_3' (43#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_41/synth/bd_44e3_s00mmu_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_s00sic_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_43/synth/bd_44e3_s00sic_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_s00sic_3' (48#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_43/synth/bd_44e3_s00sic_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_s00tr_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_42/synth/bd_44e3_s00tr_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_s00tr_3' (51#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_42/synth/bd_44e3_s00tr_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 's00_entry_pipeline_imp_1BIQ3N0' (52#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hdl/bd_44e3.v:1066]
+INFO: [Synth 8-638] synthesizing module 's00_nodes_imp_1GZQO6U' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hdl/bd_44e3.v:1714]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_sarn_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_45/synth/bd_44e3_sarn_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 'xpm_memory_base' [C:/XILINX/Vivado/2017.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'xpm_memory_base' (57#1) [C:/XILINX/Vivado/2017.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_sarn_3' (66#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_45/synth/bd_44e3_sarn_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_sawn_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_47/synth/bd_44e3_sawn_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_sawn_3' (67#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_47/synth/bd_44e3_sawn_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_sbn_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_49/synth/bd_44e3_sbn_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 'xpm_memory_base__parameterized0' [C:/XILINX/Vivado/2017.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'xpm_memory_base__parameterized0' (67#1) [C:/XILINX/Vivado/2017.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_sbn_3' (68#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_49/synth/bd_44e3_sbn_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_srn_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_46/synth/bd_44e3_srn_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 'xpm_memory_base__parameterized1' [C:/XILINX/Vivado/2017.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'xpm_memory_base__parameterized1' (68#1) [C:/XILINX/Vivado/2017.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_srn_3' (69#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_46/synth/bd_44e3_srn_3.sv:58]
+INFO: [Synth 8-638] synthesizing module 'bd_44e3_swn_3' [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_48/synth/bd_44e3_swn_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3_swn_3' (70#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_48/synth/bd_44e3_swn_3.sv:58]
+INFO: [Synth 8-256] done synthesizing module 's00_nodes_imp_1GZQO6U' (71#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hdl/bd_44e3.v:1714]
+INFO: [Synth 8-256] done synthesizing module 'bd_44e3' (72#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/hdl/bd_44e3.v:13]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_smc_0' (73#1) [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_0/synth/system_axi_smc_0.v:57]
+Finished RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 569.551 ; gain = 283.773
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 569.551 ; gain = 283.773
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1412.598 ; gain = 86.168
+Finished Constraint Validation : Time (s): cpu = 00:02:11 ; elapsed = 00:02:29 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:11 ; elapsed = 00:02:29 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:11 ; elapsed = 00:02:29 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:18 ; elapsed = 00:02:37 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:58 ; elapsed = 00:03:23 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|Module Name                                                                                                                                               | RTL Object                       | Inference      | Size (Depth x Width) | Primitives    | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 158             | RAM32M x 27   | 
+|inst/i_0/\s00_nodes/s00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory  | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 158             | RAM32M x 27   | 
+|inst/i_0/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 24              | RAM32M x 4    | 
+|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 70              | RAM32M x 12   | 
+|inst/i_0/\s00_nodes/s00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 70              | RAM32M x 12   | 
++----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:21 ; elapsed = 00:03:47 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished Timing Optimization : Time (s): cpu = 00:03:27 ; elapsed = 00:03:54 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished Technology Mapping : Time (s): cpu = 00:03:33 ; elapsed = 00:04:00 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished IO Insertion : Time (s): cpu = 00:03:34 ; elapsed = 00:04:02 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:34 ; elapsed = 00:04:02 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:35 ; elapsed = 00:04:03 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:35 ; elapsed = 00:04:03 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:36 ; elapsed = 00:04:03 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:36 ; elapsed = 00:04:03 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     8|
+|2     |LUT1    |    66|
+|3     |LUT2    |   148|
+|4     |LUT3    |   139|
+|5     |LUT4    |   728|
+|6     |LUT5    |   256|
+|7     |LUT6    |   505|
+|8     |MUXF7   |     1|
+|9     |RAM32M  |    82|
+|10    |SRL16   |     1|
+|11    |SRL16E  |    12|
+|12    |SRLC32E |   197|
+|13    |FDR     |     4|
+|14    |FDRE    |  1873|
+|15    |FDSE    |    87|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:36 ; elapsed = 00:04:03 . Memory (MB): peak = 1412.598 ; gain = 1126.820
+synth_design: Time (s): cpu = 00:03:42 ; elapsed = 00:04:12 . Memory (MB): peak = 1412.598 ; gain = 1133.520

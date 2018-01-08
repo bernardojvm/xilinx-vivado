@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ge_app_linux/src/linux_cdma_app.c&apos; to &apos;linux_ge_app.c&apos;" description="Rename resource &apos;linux_cdma_app.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/linux_cdma_app.c" name="linux_ge_app.c" stamp="1515413937404" updateReferences="true"/>
+</session>

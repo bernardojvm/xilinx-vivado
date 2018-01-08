@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Jan  8 06:49:09 2018
+# Process ID: 14209
+# Current directory: /home/petalinux/emblnx/labs/TFM/pl/TFM_GE
+# Command line: vivado
+# Log file: /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/vivado.log
+# Journal file: /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/vivado.jou
+#-----------------------------------------------------------
+start_gui
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/vivado_pid14209.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/vivado_pid14209.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/vivado_pid14209.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.ClassCastException: sun.awt.image.BufImgSurfaceData cannot be cast to sun.java2d.xr.XRSurfaceData (See /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/vivado_pid14209.debug)
+open_project /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.xpr
+INFO: [Project 1-313] Project file moved from 'C:/xup/fpga_flow/TFMV2/TFM_GE' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory '/home/petalinux/emblnx/labs/TFM/pl/ip_repo/pblaze_m_1.0', nor could it be found using path '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/C:/xup/fpga_flow/TFMV2/ip_repo/pblaze_m_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/petalinux/emblnx/labs/TFM/pl/ip_repo/pblaze_m_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/petalinux/emblnx/labs/TFM/pl/pB_rdy'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/petalinux/emblnx/labs/TFM/pl/pblaze_s'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:user:r_data_rtl:1.0' found within IP repository '/home/petalinux/emblnx/labs/TFM/pl/ip_repo'.
+File in use: /home/petalinux/emblnx/labs/TFM/pl/ip_repo/rdata_rtl.xml
+File ignored: /home/petalinux/emblnx/labs/TFM/pl/ip_repo/r_data_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:user:r_data:1.0' found within IP repository '/home/petalinux/emblnx/labs/TFM/pl/ip_repo'.
+File in use: /home/petalinux/emblnx/labs/TFM/pl/ip_repo/rdata.xml
+File ignored: /home/petalinux/emblnx/labs/TFM/pl/ip_repo/r_data.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/petalinux/emblnx/labs/TFM/pl/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/pkg/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_ps7_0_100M_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xlconcat_0_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_1' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_bram_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_bram_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xlconcat_0_1' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_bram_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_bram_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_1' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_2_bram_1' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_2_bram_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_3_bram_1' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_3_bram_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_cdma_0_2' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_cdma_0_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_auto_pc_0/stats.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 6057.742 ; gain = 109.629 ; free physical = 143 ; free virtual = 6646
+update_compile_order -fileset sources_1
+open_bd_design {/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - axi_bram_ctrl_0_bram
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_1
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - axi_bram_ctrl_1_bram
+Adding cell -- xilinx.com:user:pb_rdy:1.0 - pb_rdy_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_2
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_3
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - axi_bram_ctrl_2_bram
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - axi_bram_ctrl_3_bram
+Adding cell -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding cell -- xilinx.com:user:pblaze_m:1.0 - pblaze_m_0
+Adding cell -- xilinx.com:user:pblaze_s:1.0 - pblaze_s_0
+Adding cell -- xilinx.com:user:pblaze_s:1.0 - pblaze_s_1
+Adding cell -- xilinx.com:user:pblaze_s:1.0 - pblaze_s_2
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file </home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 6180.332 ; gain = 89.555 ; free physical = 110 ; free virtual = 6520
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.sdk -hwspec /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.sdk -hwspec /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  8 06:53:37 2018...

@@ -1,0 +1,1028 @@
+
+*** Running vivado
+    with args -log system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/petalinux/emblnx/labs/TFM/pl/ip_repo/pblaze_m_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/petalinux/emblnx/labs/TFM/pl/pB_rdy'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/petalinux/emblnx/labs/TFM/pl/pblaze_s'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:user:r_data_rtl:1.0' found within IP repository '/home/petalinux/emblnx/labs/TFM/pl/ip_repo'.
+File in use: /home/petalinux/emblnx/labs/TFM/pl/ip_repo/rdata_rtl.xml
+File ignored: /home/petalinux/emblnx/labs/TFM/pl/ip_repo/r_data_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:user:r_data:1.0' found within IP repository '/home/petalinux/emblnx/labs/TFM/pl/ip_repo'.
+File in use: /home/petalinux/emblnx/labs/TFM/pl/ip_repo/rdata.xml
+File ignored: /home/petalinux/emblnx/labs/TFM/pl/ip_repo/r_data.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/petalinux/emblnx/labs/TFM/pl/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/pkg/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_ps7_0_100M_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xlconcat_0_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_1' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_bram_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_bram_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xlconcat_0_1' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_bram_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_bram_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_1' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_2_bram_1' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_2_bram_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_3_bram_1' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_3_bram_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_cdma_0_2' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_cdma_0_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_auto_pc_0/stats.txt'. Please regenerate to continue.
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1132.375 ; gain = 44.859 ; free physical = 1385 ; free virtual = 5794
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_1/system_axi_bram_ctrl_0_1.dcp' for cell 'system_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_bram_0/system_axi_bram_ctrl_0_bram_0.dcp' for cell 'system_i/axi_bram_ctrl_0_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_0/system_axi_bram_ctrl_0_0.dcp' for cell 'system_i/axi_bram_ctrl_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_bram_0/system_axi_bram_ctrl_1_bram_0.dcp' for cell 'system_i/axi_bram_ctrl_1_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_0/system_axi_bram_ctrl_1_0.dcp' for cell 'system_i/axi_bram_ctrl_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_2_bram_1/system_axi_bram_ctrl_2_bram_1.dcp' for cell 'system_i/axi_bram_ctrl_2_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_1/system_axi_bram_ctrl_1_1.dcp' for cell 'system_i/axi_bram_ctrl_3'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_3_bram_1/system_axi_bram_ctrl_3_bram_1.dcp' for cell 'system_i/axi_bram_ctrl_3_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_cdma_0_2/system_axi_cdma_0_2.dcp' for cell 'system_i/axi_cdma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_1/system_axi_smc_1.dcp' for cell 'system_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_pb_rdy_0_1/system_pb_rdy_0_1.dcp' for cell 'system_i/pb_rdy_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_pblaze_m_0_1/system_pblaze_m_0_1.dcp' for cell 'system_i/pblaze_m_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_pblaze_s_0_0/system_pblaze_s_0_0.dcp' for cell 'system_i/pblaze_s_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_pblaze_s_1_1/system_pblaze_s_1_1.dcp' for cell 'system_i/pblaze_s_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_pblaze_s_2_1/system_pblaze_s_2_1.dcp' for cell 'system_i/pblaze_s_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/system_xlconcat_0_0.dcp' for cell 'system_i/xlconcat_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_1/system_xlconcat_0_1.dcp' for cell 'system_i/xlconcat_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 1706 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0_board.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0_board.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_cdma_0_2/system_axi_cdma_0_2.xdc] for cell 'system_i/axi_cdma_0/U0'
+Finished Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_cdma_0_2/system_axi_cdma_0_2.xdc] for cell 'system_i/axi_cdma_0/U0'
+Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_io[0]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[2]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[6]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[3]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[5]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[7]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[1]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[0]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[4]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[3]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[7]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[5]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[1]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[2]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[6]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[4]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[0]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset0'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset_reg_n_0'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[4]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[0]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[7]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[3]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[1]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[2]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[5]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[6]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/reset_reg'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset_reg_n_0'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:36]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:36]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_5'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_1'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_0'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_4'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_3'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_2'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_6'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_7'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[0]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[1]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[2]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[3]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[4]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[5]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[6]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[7]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/reset_reg'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:50]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:50]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset0'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:54]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:54]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_0'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:56]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:56]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_1'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:57]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:57]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_2'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:58]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:58]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_3'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:59]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:59]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_4'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:60]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_5'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:61]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:61]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_6'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:62]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:62]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_7'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:63]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:63]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[0]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[1]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[2]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[3]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[4]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[5]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[6]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[7]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[0]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[1]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[2]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[3]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[4]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[5]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[6]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[7]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/s_axi_araddr[2]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/s_axi_araddr[3]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:68]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[2]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[3]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[4]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[5]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[6]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[7]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[8]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[9]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[10]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[11]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[12]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[13]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/pB_rdy'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:70]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:70]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_ram_enable'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:71]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:71]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_8'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:75]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:75]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_10'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:76]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:76]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_11'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:77]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:77]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_9'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:79]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:79]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_8'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_8'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:82]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:82]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[0]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[1]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[2]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[3]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[4]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[5]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[6]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[7]'. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:151]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:200]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:201]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:204]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:276]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:277]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:278]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:279]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:280]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:281]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:282]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:464]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:465]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:466]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:467]
+Finished Parsing XDC File [/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 810 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 200 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 585 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 17 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 8 instances
+
+link_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1528.750 ; gain = 396.375 ; free physical = 1280 ; free virtual = 5834
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1553.742 ; gain = 24.992 ; free physical = 1273 ; free virtual = 5828
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 58 inverter(s) to 222 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 19430a260
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2023.234 ; gain = 0.000 ; free physical = 884 ; free virtual = 5453
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 317 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 2 Constant propagation | Checksum: 1c8f15962
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2023.234 ; gain = 0.000 ; free physical = 871 ; free virtual = 5441
+INFO: [Opt 31-389] Phase Constant propagation created 121 cells and removed 2412 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 136aa1973
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2023.234 ; gain = 0.000 ; free physical = 871 ; free virtual = 5441
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2719 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 136aa1973
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2023.234 ; gain = 0.000 ; free physical = 873 ; free virtual = 5442
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 136aa1973
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2023.234 ; gain = 0.000 ; free physical = 873 ; free virtual = 5442
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2023.234 ; gain = 0.000 ; free physical = 873 ; free virtual = 5442
+Ending Logic Optimization Task | Checksum: 136aa1973
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2023.234 ; gain = 0.000 ; free physical = 873 ; free virtual = 5442
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 8 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 16
+Ending PowerOpt Patch Enables Task | Checksum: 1b54e86ef
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 834 ; free virtual = 5408
+Ending Power Optimization Task | Checksum: 1b54e86ef
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2244.543 ; gain = 221.309 ; free physical = 848 ; free virtual = 5422
+54 Infos, 117 Warnings, 140 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 2244.543 ; gain = 715.793 ; free physical = 848 ; free virtual = 5422
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 847 ; free virtual = 5424
+INFO: [Common 17-1381] The checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 842 ; free virtual = 5423
+Command: report_drc -file system_wrapper_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 839 ; free virtual = 5420
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 826 ; free virtual = 5417
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1a6ef465c
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 826 ; free virtual = 5417
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 826 ; free virtual = 5423
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 15ef31a2f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 793 ; free virtual = 5390
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 2d8ed2378
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 739 ; free virtual = 5337
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2d8ed2378
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 739 ; free virtual = 5337
+Phase 1 Placer Initialization | Checksum: 2d8ed2378
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 739 ; free virtual = 5337
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1c463a53f
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:25 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 720 ; free virtual = 5318
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1c463a53f
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:26 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 720 ; free virtual = 5318
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1af3cd876
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:37 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 716 ; free virtual = 5314
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 29da7c6dc
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:37 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 716 ; free virtual = 5314
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1cecda2d8
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:37 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 716 ; free virtual = 5314
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 21c2ee83a
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:41 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 717 ; free virtual = 5315
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 26113422e
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:43 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 717 ; free virtual = 5315
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 1fa099460
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:02:04 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 701 ; free virtual = 5299
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 1a1277a7b
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:02:06 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 703 ; free virtual = 5300
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 1a1277a7b
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:02:06 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 703 ; free virtual = 5300
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 16614c82d
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:02:13 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 706 ; free virtual = 5304
+Phase 3 Detail Placement | Checksum: 16614c82d
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:02:13 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 706 ; free virtual = 5304
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: e8d50af7
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: e8d50af7
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:02:26 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 723 ; free virtual = 5322
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-5.085. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: c7f2650f
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:03:00 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 720 ; free virtual = 5319
+Phase 4.1 Post Commit Optimization | Checksum: c7f2650f
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:03:00 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 720 ; free virtual = 5319
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: c7f2650f
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:03:00 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 720 ; free virtual = 5319
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: c7f2650f
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:03:01 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 721 ; free virtual = 5319
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 10376ad0f
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:03:01 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 721 ; free virtual = 5319
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 10376ad0f
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:03:01 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 721 ; free virtual = 5319
+Ending Placer Task | Checksum: cc64f0ae
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:03:01 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 737 ; free virtual = 5336
+73 Infos, 117 Warnings, 140 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:07 ; elapsed = 00:03:08 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 737 ; free virtual = 5336
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 696 ; free virtual = 5327
+INFO: [Common 17-1381] The checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 726 ; free virtual = 5335
+report_io: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.29 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 717 ; free virtual = 5326
+report_utilization: Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.55 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 725 ; free virtual = 5334
+report_control_sets: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 724 ; free virtual = 5333
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 2ab331b5 ConstDB: 0 ShapeSum: a1b1bef9 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 112e7c407
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 643 ; free virtual = 5253
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 112e7c407
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 639 ; free virtual = 5249
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 112e7c407
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 631 ; free virtual = 5241
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 112e7c407
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 631 ; free virtual = 5241
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1a5041c31
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:49 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 610 ; free virtual = 5220
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.157 | TNS=-1434.967| WHS=-0.358 | THS=-868.444|
+
+Phase 2 Router Initialization | Checksum: 1d248d9e7
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:01:00 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 609 ; free virtual = 5219
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: ce507521
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:13 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 607 ; free virtual = 5217
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4206
+ Number of Nodes with overlaps = 318
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.084 | TNS=-1792.309| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1757f7f55
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:02:26 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 568 ; free virtual = 5191
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 134
+ Number of Nodes with overlaps = 36
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.893 | TNS=-1784.393| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: bda0c4f2
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:02:37 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 570 ; free virtual = 5194
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 141
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.892 | TNS=-1780.461| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1012e2916
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:02:46 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 571 ; free virtual = 5194
+Phase 4 Rip-up And Reroute | Checksum: 1012e2916
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:02:46 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 571 ; free virtual = 5194
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 16dd29c01
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:02:48 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 570 ; free virtual = 5194
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.777 | TNS=-1695.004| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1ce0eb02d
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:02:49 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 568 ; free virtual = 5191
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1ce0eb02d
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:02:49 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 568 ; free virtual = 5191
+Phase 5 Delay and Skew Optimization | Checksum: 1ce0eb02d
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:02:50 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 568 ; free virtual = 5191
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1d3ab46d1
+
+Time (s): cpu = 00:03:02 ; elapsed = 00:02:52 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 569 ; free virtual = 5192
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.777 | TNS=-1692.971| WHS=0.008  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 20b48773d
+
+Time (s): cpu = 00:03:02 ; elapsed = 00:02:52 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 569 ; free virtual = 5192
+Phase 6 Post Hold Fix | Checksum: 20b48773d
+
+Time (s): cpu = 00:03:02 ; elapsed = 00:02:53 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 569 ; free virtual = 5192
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 19.8737 %
+  Global Horizontal Routing Utilization  = 23.7199 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 65.7658%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 69.3694%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 64.7059%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 72.0588%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 218867958
+
+Time (s): cpu = 00:03:02 ; elapsed = 00:02:53 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 569 ; free virtual = 5192
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 218867958
+
+Time (s): cpu = 00:03:03 ; elapsed = 00:02:53 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 568 ; free virtual = 5191
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1daff0d96
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:02:56 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 567 ; free virtual = 5190
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.777 | TNS=-1692.971| WHS=0.008  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1daff0d96
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:02:57 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 567 ; free virtual = 5190
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:02:57 . Memory (MB): peak = 2244.543 ; gain = 0.000 ; free physical = 587 ; free virtual = 5210
+
+Routing Is Done.
+87 Infos, 118 Warnings, 140 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:15 ; elapsed = 00:03:05 . Memory (MB): peak = 2274.453 ; gain = 29.910 ; free physical = 587 ; free virtual = 5210
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2274.453 ; gain = 0.000 ; free physical = 540 ; free virtual = 5205
+INFO: [Common 17-1381] The checkpoint '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2274.453 ; gain = 0.000 ; free physical = 573 ; free virtual = 5208
+Command: report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2320.785 ; gain = 46.332 ; free physical = 554 ; free virtual = 5190
+Command: report_methodology -file system_wrapper_methodology_drc_routed.rpt -rpx system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 2372.766 ; gain = 51.980 ; free physical = 436 ; free virtual = 5073
+Command: report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+94 Infos, 118 Warnings, 140 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 2441.789 ; gain = 69.023 ; free physical = 378 ; free virtual = 5026
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m04_nodes/m04_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m04_nodes/m04_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m04_nodes/m04_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m04_nodes/m04_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m04_nodes/m04_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m03_nodes/m03_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m03_nodes/m03_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m03_nodes/m03_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m03_nodes/m03_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m03_nodes/m03_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m02_nodes/m02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m02_nodes/m02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m02_nodes/m02_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m02_nodes/m02_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m02_nodes/m02_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+Command: write_bitstream -force system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command write_bitstream
+Command: report_drc (run_mandatory_drcs) for: bitstream_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg_reg[31]_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg_reg[31]_i_1/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Breg_reg[31]_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Breg_reg[31]_i_1/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Breg_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Creg_reg[31]_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Creg_reg[31]_i_1/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Creg_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/data_path_loop[2].low_hwbuild.shift_rotate_flop_0[0] is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/in_port_reg[7]_i_2/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/in_port_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/rdy_tmp1_reg[0] is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/rdy_tmp2_reg[3]_i_1/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/rdy_tmp2_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/s_axi_rdata_reg[31]_i_2_n_0 is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/s_axi_rdata_reg[31]_i_2/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/s_axi_rdata_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_0/U0/kcpsm6_v1/data_path_loop[2].low_hwbuild.shift_rotate_flop_0[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_0/U0/kcpsm6_v1/in_port_reg[7]_i_2/O, cell system_i/pblaze_s_0/U0/kcpsm6_v1/in_port_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_0/U0/kcpsm6_v1/rdy_tmp1_reg[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_0/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1/O, cell system_i/pblaze_s_0/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_1/U0/kcpsm6_v1/data_path_loop[2].low_hwbuild.shift_rotate_flop_0[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_1/U0/kcpsm6_v1/in_port_reg[7]_i_2/O, cell system_i/pblaze_s_1/U0/kcpsm6_v1/in_port_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_1/U0/kcpsm6_v1/rdy_tmp1_reg[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_1/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1/O, cell system_i/pblaze_s_1/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_2/U0/kcpsm6_v1/data_path_loop[2].low_hwbuild.shift_rotate_flop_0[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_2/U0/kcpsm6_v1/in_port_reg[7]_i_2/O, cell system_i/pblaze_s_2/U0/kcpsm6_v1/in_port_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_2/U0/kcpsm6_v1/rdy_tmp1_reg[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_2/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1/O, cell system_i/pblaze_s_2/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 60 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./system_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/petalinux/emblnx/labs/TFM/pl/TFM_GE/TFM_GE.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Jan  8 10:23:07 2018. For additional details about this file, please refer to the WebTalk help file at /opt/pkg/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+105 Infos, 211 Warnings, 141 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:53 ; elapsed = 00:00:51 . Memory (MB): peak = 2814.922 ; gain = 371.461 ; free physical = 472 ; free virtual = 4993
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  8 10:23:08 2018...
