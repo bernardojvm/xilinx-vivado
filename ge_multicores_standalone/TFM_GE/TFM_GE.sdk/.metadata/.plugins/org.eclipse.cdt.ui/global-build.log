@@ -1,0 +1,1969 @@
+01:23:54 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:17:20: fatal error: pBlaze.h: No such file or directory
+ #include "pBlaze.h"
+                    ^
+compilation terminated.
+make: *** [src/main.o] Error 1
+01:26:16 **** Auto Build of project ge_app_standalone_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axicdma_v4_3/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/axicdma_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/pBlaze_v1_0/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/pBlaze_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axicdma_v4_3/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/axicdma_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling axicdma"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_4/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/emacps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/pBlaze_v1_0/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/pBlaze_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling pBlaze..."
+pBlaze_selftest.c: In function 'PBLAZE_Reg_SelfTest':
+pBlaze_selftest.c:52:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( PBLAZE_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                       ^~
+pBlaze_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_2/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/sdps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_3/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/ttcps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+C:/XILINX/SDK/2017.2/gnuwin/bin/make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+01:26:45 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91748	   4212	  23824	 119784	  1d3e8	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:27:49 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:29:28 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91756	   4212	  23824	 119792	  1d3f0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:30:09 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91596	   4212	  23824	 119632	  1d350	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:31:37 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:31:40 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:36:03 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91596	   4212	  23824	 119632	  1d350	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:38:02 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:38:31 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:38:35 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:39:18 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:39:23 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:39:45 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:41:39 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:42:30 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:42:50 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:43:40 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:244:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:228:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:373:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:43:44 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:44:54 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:47:16 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:47:20 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:48:14 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:48:17 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:49:37 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:49:41 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:51:13 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:51:16 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:51:53 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:51:58 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:52:35 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:53:10 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:53:38 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:53:51 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:54:19 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+01:54:25 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+01:55:22 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:01:46 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:02:50 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:02:54 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:03:31 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:03:35 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:04:04 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:04:08 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:12:17 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:12:42 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:12:53 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:13:27 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:13:30 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:15:41 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:15:46 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:16:53 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:16:56 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:17:47 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:18:12 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:18:16 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:18:33 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:19:32 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91724	   4212	  23824	 119760	  1d3d0	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:20:27 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:20:43 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:21:21 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:23:47 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:23:51 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:24:21 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:24:25 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:25:47 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:25:50 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+02:47:33 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:245:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:229:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91596	   4212	  23824	 119632	  1d350	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:48:22 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:243:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:227:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:372:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91596	   4212	  23824	 119632	  1d350	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+02:48:26 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+04:33:37 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+04:33:54 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:243:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:227:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:372:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91596	   4212	  23824	 119632	  1d350	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+04:47:39 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+04:47:54 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+04:49:37 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:243:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:227:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:372:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+04:49:41 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+04:50:23 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:243:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:227:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:372:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+04:50:37 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+04:51:36 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:243:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:227:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:372:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+04:51:39 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+04:53:07 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:243:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:227:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:372:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91596	   4212	  23824	 119632	  1d350	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+04:53:11 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+04:54:13 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+04:54:50 **** Auto Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ge_app_standalone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xuartps.h:187:0,
+                 from ../src/main.c:9:
+../src/main.c: In function 'cdma_transfer':
+../../ge_app_standalone_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:243:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:227:6: note: declared here
+ void cdma_transfer(int modo,u8 * cdma_memory,u8 * source, int numofbytes){
+      ^~~~~~~~~~~~~
+../src/main.c: In function 'ScuGicInterrupt_Init':
+../src/main.c:372:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/main.c:35:22: warning: 'destination' defined but not used [-Wunused-variable]
+ volatile static u8 * destination=NULL;
+                      ^~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: ge_app_standalone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -L../../ge_app_standalone_bsp/ps7_cortexa9_0/lib -L"C:\xup\fpga_flow\TFMV2\TFM_GE\TFM_GE.sdk\system_wrapper_hw_platform_0\drivers\pBlaze_v1_0\src" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "ge_app_standalone.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ge_app_standalone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size ge_app_standalone.elf  |tee "ge_app_standalone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91660	   4212	  23824	 119696	  1d390	ge_app_standalone.elf
+Finished building: ge_app_standalone.elf.size
+ 
+04:54:57 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.

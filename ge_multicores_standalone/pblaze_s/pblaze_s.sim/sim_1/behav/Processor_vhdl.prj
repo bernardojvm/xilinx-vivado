@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../pblaze_s.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd"
+vhdl xil_defaultlib  "../../../pblaze_s.srcs/sources_1/imports/hdl/CONSTANTES.vhd"
+vhdl xil_defaultlib  "../../../pblaze_s.srcs/sources_1/imports/hdl/Cordic.vhd"
+vhdl xil_defaultlib  "../../../pblaze_s.srcs/sources_1/imports/src/kcpsm6.vhd"
+vhdl xil_defaultlib  "../../../pblaze_s.srcs/sources_1/imports/src/Proccessor.vhd"
+
+# Do not sort compile order
+nosort

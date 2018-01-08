@@ -1,0 +1,8 @@
+04:54:57 **** Incremental Build of configuration Debug for project ge_app_standalone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: No se hace nada para `main-build'.
+
+04:54:57 Build Finished (took 360ms)
+

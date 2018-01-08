@@ -1,0 +1,1477 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Jan  8 04:31:00 2018
+# Process ID: 14176
+# Current directory: C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1
+# Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+# Log file: C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1/system_wrapper.vdi
+# Journal file: C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/xup/fpga_flow/TFMV2/ip_repo/pblaze_m_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/fpga_flow/TFMV2/pB_rdy'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/fpga_flow/TFMV2/pblaze_s'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:user:r_data:1.0' found within IP repository 'c:/xup/fpga_flow/TFMV2/ip_repo'.
+File in use: c:/xup/fpga_flow/TFMV2/ip_repo/rdata.xml
+File ignored: c:/xup/fpga_flow/TFMV2/ip_repo/r_data.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:user:r_data_rtl:1.0' found within IP repository 'c:/xup/fpga_flow/TFMV2/ip_repo'.
+File in use: c:/xup/fpga_flow/TFMV2/ip_repo/rdata_rtl.xml
+File ignored: c:/xup/fpga_flow/TFMV2/ip_repo/r_data_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/fpga_flow/TFMV2/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XILINX/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_ps7_0_100M_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xlconcat_0_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_1' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_bram_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_bram_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xlconcat_0_1' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_bram_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_bram_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_1' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_2_bram_1' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_2_bram_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_3_bram_1' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_3_bram_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_cdma_0_2' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_cdma_0_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_auto_pc_0/stats.txt'. Please regenerate to continue.
+add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 337.457 ; gain = 76.242
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_1/system_axi_bram_ctrl_0_1.dcp' for cell 'system_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_bram_0/system_axi_bram_ctrl_0_bram_0.dcp' for cell 'system_i/axi_bram_ctrl_0_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_0/system_axi_bram_ctrl_0_0.dcp' for cell 'system_i/axi_bram_ctrl_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_bram_0/system_axi_bram_ctrl_1_bram_0.dcp' for cell 'system_i/axi_bram_ctrl_1_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_0/system_axi_bram_ctrl_1_0.dcp' for cell 'system_i/axi_bram_ctrl_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_2_bram_1/system_axi_bram_ctrl_2_bram_1.dcp' for cell 'system_i/axi_bram_ctrl_2_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_1/system_axi_bram_ctrl_1_1.dcp' for cell 'system_i/axi_bram_ctrl_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_3_bram_1/system_axi_bram_ctrl_3_bram_1.dcp' for cell 'system_i/axi_bram_ctrl_3_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_cdma_0_2/system_axi_cdma_0_2.dcp' for cell 'system_i/axi_cdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_1/system_axi_smc_1.dcp' for cell 'system_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_pb_rdy_0_1/system_pb_rdy_0_1.dcp' for cell 'system_i/pb_rdy_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_pblaze_m_0_1/system_pblaze_m_0_1.dcp' for cell 'system_i/pblaze_m_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_pblaze_s_0_0/system_pblaze_s_0_0.dcp' for cell 'system_i/pblaze_s_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_pblaze_s_1_1/system_pblaze_s_1_1.dcp' for cell 'system_i/pblaze_s_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_pblaze_s_2_1/system_pblaze_s_2_1.dcp' for cell 'system_i/pblaze_s_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/system_xlconcat_0_0.dcp' for cell 'system_i/xlconcat_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_1/system_xlconcat_0_1.dcp' for cell 'system_i/xlconcat_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 1706 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0_board.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0_board.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_smc_1/bd_0/ip/ip_1/bd_8422_psr_aclk_0.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_cdma_0_2/system_axi_cdma_0_2.xdc] for cell 'system_i/axi_cdma_0/U0'
+Finished Parsing XDC File [c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_cdma_0_2/system_axi_cdma_0_2.xdc] for cell 'system_i/axi_cdma_0/U0'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_io[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset0'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset_reg_n_0'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/reset_reg'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset_reg_n_0'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:36]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:36]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_5'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_1'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_0'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_4'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_3'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_2'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_6'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_7'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/reset_reg'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:50]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:50]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset0'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:54]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:54]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_0'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:56]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:56]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_1'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:57]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:57]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_2'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:58]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:58]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_3'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:59]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:59]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_4'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:60]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_5'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:61]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:61]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_6'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:62]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:62]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_7'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:63]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:63]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/s_axi_araddr[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/s_axi_araddr[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:68]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[8]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[9]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[10]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[11]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[12]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_address[13]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/pB_rdy'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:70]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:70]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0_ram_enable'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:71]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:71]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_8'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:75]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:75]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_10'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:76]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:76]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_11'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:77]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:77]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_9'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:79]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:79]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_8'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_8'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:82]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:82]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/p_12_in[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:151]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:200]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:201]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:204]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:206]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:276]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:277]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:278]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:279]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:280]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:281]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:282]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:464]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:465]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:466]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:467]
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 810 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 200 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 585 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 17 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 8 instances
+
+link_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 815.281 ; gain = 477.824
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 820.832 ; gain = 5.551
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 58 inverter(s) to 222 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 17073ac4b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1396.473 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 317 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 2 Constant propagation | Checksum: 136306922
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1396.473 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 123 cells and removed 2415 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 184e273a9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1396.473 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2719 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 184e273a9
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1396.473 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 184e273a9
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1396.473 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 1396.473 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 184e273a9
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1396.473 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 8 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 16
+Ending PowerOpt Patch Enables Task | Checksum: 1bfe68f62
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1bfe68f62
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 1601.777 ; gain = 205.305
+55 Infos, 117 Warnings, 140 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:08 ; elapsed = 00:00:54 . Memory (MB): peak = 1601.777 ; gain = 786.496
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1601.777 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Command: report_drc -file system_wrapper_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1601.777 ; gain = 0.000
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1a6ef465c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 1601.777 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 114e71de5
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1792cc2a0
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1792cc2a0
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1792cc2a0
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 189309f67
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:15 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 189309f67
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:01:16 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: d73be439
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:22 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: c9dca2c3
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:23 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: fc43d001
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:23 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1ad20a2f7
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:25 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: f3c992b1
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:27 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 18a450183
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:49 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 176b7911b
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:50 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: f4332cc8
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:51 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 12597f4b4
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:55 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 12597f4b4
+
+Time (s): cpu = 00:02:33 ; elapsed = 00:01:55 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 134fcb2f5
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 134fcb2f5
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:02:05 . Memory (MB): peak = 1601.777 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-5.208. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 18424f50f
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:02:45 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 18424f50f
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:02:45 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 18424f50f
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:02:46 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 18424f50f
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:02:46 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 204b5d88f
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:02:46 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 204b5d88f
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:02:47 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Ending Placer Task | Checksum: 113367bc0
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:02:47 . Memory (MB): peak = 1601.777 ; gain = 0.000
+74 Infos, 117 Warnings, 140 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:42 ; elapsed = 00:02:52 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 1601.777 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 1601.777 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 1601.777 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.437 . Memory (MB): peak = 1601.777 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+WARNING: [Place 30-34] Design utilization is very high. Please run report_utilization command to see design utilization.
+Phase 1 Physical Synthesis Initialization | Checksum: 140ed7c90
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1601.777 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.208 | TNS=-1488.188 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 8 candidate nets for fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 4 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 Fanout Optimization | Checksum: 140ed7c90
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[4].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[4]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_33_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_33
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[31]_i_2_n_0.  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/x[31]_i_2
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[31]_i_4_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[31]_i_4
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[31]_i_9_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[31]_i_9
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_32_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_32
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[14].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[14]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[23]_i_30_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[23]_i_30
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[23]_i_31_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[23]_i_31
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[0].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[0]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[15].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[15]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[13].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[13]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[12].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[12]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[31]_i_36_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[31]_i_36
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[8].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[8]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[9].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[9]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[30]_i_1_n_0.  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/x[30]_i_1
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[30]_i_2_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[30]_i_2
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[30]_i_3_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[30]_i_3
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_30_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_30
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[5].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[5]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_31_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_31
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[3].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[3]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[5].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[5]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[23]_i_39_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[23]_i_39
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[0].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[0]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[2].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[2]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[31]_i_35_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[31]_i_35
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[12].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[12]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[3].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[3]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[12].  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg[12]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_32_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_32
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[31]_i_2_n_0.  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[31]_i_2
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[31]_i_4_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[31]_i_4
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[31]_i_9_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[31]_i_9
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[6].  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[6]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[7].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[7]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_40_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_40
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[8].  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg[8]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_33_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_33
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[12].  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg[12]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[10].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[10]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[11].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[11]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_39_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[27]_i_39
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[9].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[9]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[16].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[16]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[1].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[1]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/x[23]_i_38_n_0.  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/x[23]_i_38
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[23]_i_30_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[23]_i_30
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[2].  Did not re-place instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[2]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1[31].  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1[31]_i_8
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1[31]_i_14_n_0.  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1[31]_i_14
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1[31]_i_2_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1[31]_i_2
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[30]_i_1_n_0.  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[30]_i_1
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[30]_i_2_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[30]_i_2
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[30]_i_3_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[30]_i_3
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/z[27]_i_48_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/z[27]_i_48
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_2/U0/cordic_v1/p_0_out[24].  Re-placed instance system_i/pblaze_s_2/U0/cordic_v1/x[27]_i_17
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[7].  Re-placed instance system_i/pblaze_s_2/U0/cordic_v1/mult1_reg[7]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_2/U0/cordic_v1/x[27]_i_21_n_0.  Did not re-place instance system_i/pblaze_s_2/U0/cordic_v1/x[27]_i_21
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_2/U0/cordic_v1/x[31]_i_2_n_0.  Did not re-place instance system_i/pblaze_s_2/U0/cordic_v1/x[31]_i_2
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_2/U0/cordic_v1/x[31]_i_4_n_0.  Did not re-place instance system_i/pblaze_s_2/U0/cordic_v1/x[31]_i_4
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_2/U0/cordic_v1/p_0_out[25].  Re-placed instance system_i/pblaze_s_2/U0/cordic_v1/x[27]_i_16
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_2/U0/cordic_v1/x[27]_i_20_n_0.  Did not re-place instance system_i/pblaze_s_2/U0/cordic_v1/x[27]_i_20
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[13].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[13]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1[29].  Did not re-place instance system_i/pblaze_s_1/U0/cordic_v1/mult1[29]_i_3
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1[29]_i_1_n_0.  Did not re-place instance system_i/pblaze_s_1/U0/cordic_v1/mult1[29]_i_1
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1[29]_i_5_n_0.  Re-placed instance system_i/pblaze_s_1/U0/cordic_v1/mult1[29]_i_5
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[9].  Re-placed instance system_i/pblaze_s_1/U0/cordic_v1/mult1_reg[9]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_1/U0/cordic_v1/z[27]_i_57_n_0.  Did not re-place instance system_i/pblaze_s_1/U0/cordic_v1/z[27]_i_57
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/p_0_out[25].  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_16
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_20_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_20
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_1/U0/cordic_v1/x[23]_i_30_n_0.  Did not re-place instance system_i/pblaze_s_1/U0/cordic_v1/x[23]_i_30
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_1/U0/cordic_v1/x[31]_i_2_n_0.  Re-placed instance system_i/pblaze_s_1/U0/cordic_v1/x[31]_i_2
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_1/U0/cordic_v1/x[31]_i_4_n_0.  Did not re-place instance system_i/pblaze_s_1/U0/cordic_v1/x[31]_i_4
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_1/U0/cordic_v1/x[31]_i_9_n_0.  Did not re-place instance system_i/pblaze_s_1/U0/cordic_v1/x[31]_i_9
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_40_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_40
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1[31].  Did not re-place instance system_i/pblaze_s_1/U0/cordic_v1/mult1[31]_i_8
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1[31]_i_14_n_0.  Re-placed instance system_i/pblaze_s_1/U0/cordic_v1/mult1[31]_i_14
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1[31]_i_2_n_0.  Did not re-place instance system_i/pblaze_s_1/U0/cordic_v1/mult1[31]_i_2
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_1/U0/cordic_v1/z[23]_i_47_n_0.  Did not re-place instance system_i/pblaze_s_1/U0/cordic_v1/z[23]_i_47
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/p_0_out[23].  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[23]_i_14
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[4].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[4]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[23]_i_18_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[23]_i_18
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[11].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[11]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[8].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[8]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[10].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[10]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_s_1/U0/cordic_v1/x[27]_i_32_n_0.  Did not re-place instance system_i/pblaze_s_1/U0/cordic_v1/x[27]_i_32
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/z[27]_i_49_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/z[27]_i_49
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[1].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[1]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/z[23]_i_46_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/z[23]_i_46
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[15].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[15]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[13].  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg[13]
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[29]_i_1_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[29]_i_1
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[29]_i_2_n_0.  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[29]_i_2
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[29]_i_3_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[29]_i_3
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/p_0_out[27].  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_14
+INFO: [Physopt 32-662] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_18_n_0.  Did not re-place instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_18
+INFO: [Physopt 32-663] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[6].  Re-placed instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[6]
+INFO: [Physopt 32-663] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[16].  Re-placed instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg[16]
+INFO: [Physopt 32-661] Optimized 50 nets.  Re-placed 50 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 50 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 50 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.707 | TNS=-1445.003 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Phase 3 Placement Based Optimization | Checksum: 1c47f3d5b
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 4 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring () optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 4 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Phase 4 Rewire | Checksum: 1c47f3d5b
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:20 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 5 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 63 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_s_1/U0/cordic_v1/p_0_out[25]. Net driver system_i/pblaze_s_1/U0/cordic_v1/x[27]_i_16 was replaced.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[7]. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_s_1/U0/cordic_v1/p_0_out[29]. Net driver system_i/pblaze_s_1/U0/cordic_v1/x[31]_i_21 was replaced.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/p_0_out[22]. Net driver system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[23]_i_15 was replaced.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[9]. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/p_0_out[24]. Net driver system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_17 was replaced.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/p_0_out[26]. Net driver system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[27]_i_15 was replaced.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/p_0_out[29]. Net driver system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[31]_i_21 was replaced.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[8]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[15]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[0]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult2_reg_n_0_[5]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult2_reg_n_0_[0]. Replicated 2 times.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/p_0_out[28]. Net driver system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x[31]_i_22 was replaced.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_s_1/U0/cordic_v1/p_0_out[28]. Net driver system_i/pblaze_s_1/U0/cordic_v1/x[31]_i_22 was replaced.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_s_1/U0/cordic_v1/p_0_out[27]. Net driver system_i/pblaze_s_1/U0/cordic_v1/x[27]_i_14 was replaced.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult2_reg_n_0_[12]. Replicated 1 times.
+INFO: [Physopt 32-572] Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[13] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_s_1/U0/cordic_v1/p_0_out[22]. Net driver system_i/pblaze_s_1/U0/cordic_v1/x[23]_i_15 was replaced.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_s_2/U0/cordic_v1/p_0_out[22]. Net driver system_i/pblaze_s_2/U0/cordic_v1/x[23]_i_15 was replaced.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_s_2/U0/cordic_v1/p_0_out[26]. Net driver system_i/pblaze_s_2/U0/cordic_v1/x[27]_i_15 was replaced.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[16]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[4]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[14]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[3]. Replicated 1 times.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[10] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[11]. Replicated 1 times.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[4] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[13]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[8]. Replicated 1 times.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[12] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult2_reg_n_0_[14]. Replicated 1 times.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[6] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult2_reg_n_0_[13]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[0]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[5]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult2_reg_n_0_[3]. Replicated 1 times.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_s_1/U0/cordic_v1/p_0_out[23]. Net driver system_i/pblaze_s_1/U0/cordic_v1/x[23]_i_14 was replaced.
+INFO: [Physopt 32-572] Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[12] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[14] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[15] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[16] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[10] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult2_reg_n_0_[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult2_reg_n_0_[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult2_reg_n_0_[3]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult2_reg_n_0_[4]. Replicated 1 times.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[7] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[9] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult2_reg_n_0_[2]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult2_reg_n_0_[6]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult2_reg_n_0_[7]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult2_reg_n_0_[11]. Replicated 1 times.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_s_1/U0/cordic_v1/p_0_out[24]. Net driver system_i/pblaze_s_1/U0/cordic_v1/x[27]_i_17 was replaced.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult2_reg_n_0_[15]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult2_reg_n_0_[11]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult2_reg_n_0_[13]. Replicated 1 times.
+INFO: [Physopt 32-572] Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[5] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-601] Processed net system_i/pblaze_s_2/U0/cordic_v1/p_0_out[25]. Net driver system_i/pblaze_s_2/U0/cordic_v1/x[27]_i_16 was replaced.
+INFO: [Physopt 32-232] Optimized 47 nets. Created 37 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 47 nets or cells. Created 37 new cells, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.707 | TNS=-1449.786 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Phase 5 Critical Cell Optimization | Checksum: 18c553041
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:54 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 6 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 6 DSP Register Optimization | Checksum: 18c553041
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:54 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 7 BRAM Register Optimization
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 7 BRAM Register Optimization | Checksum: 18c553041
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:54 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 8 URAM Register Optimization
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 8 URAM Register Optimization | Checksum: 18c553041
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 9 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 9 Shift Register Optimization | Checksum: 18c553041
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 10 Critical Pin Optimization
+INFO: [Physopt 32-606] Identified 100 candidate nets for critical-pin optimization.
+INFO: [Physopt 32-608] Optimized 66 nets.  Swapped 1125 pins.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 66 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 1125 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.489 | TNS=-1427.563 |
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Phase 10 Critical Pin Optimization | Checksum: 18c553041
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:56 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 11 Very High Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 11 Very High Fanout Optimization | Checksum: 18c553041
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:56 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 12 BRAM Enable Optimization
+Phase 12 BRAM Enable Optimization | Checksum: 18c553041
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:56 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 1601.777 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-4.489 | TNS=-1427.563 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  Placement Based    |          0.501  |         43.184  |            0  |              0  |                    50  |           0  |           1  |  00:00:11  |
+|  Rewire             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell      |          0.000  |         -4.783  |           37  |              0  |                    47  |           0  |           1  |  00:00:34  |
+|  DSP Register       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register     |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Pin       |          0.218  |         22.224  |            0  |              0  |                    66  |           0  |           1  |  00:00:01  |
+|  Very High Fanout   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Enable        |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |          0.719  |         60.625  |           37  |              0  |                   163  |           0  |          11  |  00:00:47  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Physical Synthesis Task | Checksum: 116e408ce
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:58 . Memory (MB): peak = 1601.777 ; gain = 0.000
+272 Infos, 118 Warnings, 140 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:57 ; elapsed = 00:01:09 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 1601.777 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 1601.777 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 2bebd1e ConstDB: 0 ShapeSum: 7dd66263 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 19712bd63
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 19712bd63
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 19712bd63
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 1601.777 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 19712bd63
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 1601.777 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 24b432d6a
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:33 . Memory (MB): peak = 1625.668 ; gain = 23.891
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.584 | TNS=-1386.689| WHS=-0.357 | THS=-796.681|
+
+Phase 2 Router Initialization | Checksum: 21573b8fd
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:40 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 18e88c6f4
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:46 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4357
+ Number of Nodes with overlaps = 360
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.728 | TNS=-1676.612| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 11943b05b
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:15 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 234
+ Number of Nodes with overlaps = 33
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.706 | TNS=-1672.563| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1fe3a2111
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1703.055 ; gain = 101.277
+Phase 4 Rip-up And Reroute | Checksum: 1fe3a2111
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 23c169ba4
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:22 . Memory (MB): peak = 1703.055 ; gain = 101.277
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.591 | TNS=-1593.862| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1fec4c721
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:23 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1fec4c721
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:23 . Memory (MB): peak = 1703.055 ; gain = 101.277
+Phase 5 Delay and Skew Optimization | Checksum: 1fec4c721
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:23 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 171b102b8
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:25 . Memory (MB): peak = 1703.055 ; gain = 101.277
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.591 | TNS=-1594.516| WHS=0.022  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 221ba2959
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1703.055 ; gain = 101.277
+Phase 6 Post Hold Fix | Checksum: 221ba2959
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 19.7462 %
+  Global Horizontal Routing Utilization  = 24.8803 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 72.0721%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 62.1622%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 64.7059%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 66.1765%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1b9e71488
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1b9e71488
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:26 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1a9133478
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:01:29 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.591 | TNS=-1594.516| WHS=0.022  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1a9133478
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:30 . Memory (MB): peak = 1703.055 ; gain = 101.277
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:30 . Memory (MB): peak = 1703.055 ; gain = 101.277
+
+Routing Is Done.
+288 Infos, 119 Warnings, 140 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:30 ; elapsed = 00:01:35 . Memory (MB): peak = 1703.055 ; gain = 101.277
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 1703.055 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 1703.055 ; gain = 0.000
+Command: report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1703.055 ; gain = 0.000
+Command: report_methodology -file system_wrapper_methodology_drc_routed.rpt -rpx system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.410 ; gain = 64.355
+Command: report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+295 Infos, 119 Warnings, 140 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 1825.371 ; gain = 57.961
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1830.379 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+WARNING: [Place 30-34] Design utilization is very high. Please run report_utilization command to see design utilization.
+Phase 1 Physical Synthesis Initialization | Checksum: 1e05a23ca
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1840.535 ; gain = 10.156
+WARNING: [Physopt 32-745] Physical Optimization has determined that the magnitude of the negative slack is too large and it is highly unlikely that slack will be improved. Post-Route Physical Optimization is most effective when WNS is above -0.5ns
+
+Phase 2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.585 | TNS=-1595.718 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[4]. Clock skew was adjusted for instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[4].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.558 | TNS=-1585.800 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[26]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[1]. Clock skew was adjusted for instance system_i/pblaze_s_1/U0/cordic_v1/mult1_reg[1].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.495 | TNS=-1577.721 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[9]. Clock skew was adjusted for instance system_i/pblaze_s_2/U0/cordic_v1/mult1_reg[9].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.492 | TNS=-1576.106 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[10]. Clock skew was adjusted for instance system_i/pblaze_s_1/U0/cordic_v1/mult1_reg[10].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.490 | TNS=-1577.440 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[7]. Clock skew was adjusted for instance system_i/pblaze_s_1/U0/cordic_v1/mult1_reg[7].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.479 | TNS=-1575.271 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[1]. Clock skew was adjusted for instance system_i/pblaze_s_0/U0/cordic_v1/mult2_reg[1].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult2_reg_n_0_[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.477 | TNS=-1574.764 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-703] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[9]_repN. Clock skew was adjusted for instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg[9]_replica.
+INFO: [Physopt 32-735] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[9]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.475 | TNS=-1570.813 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[4]. Clock skew was adjusted for instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[4].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.472 | TNS=-1566.477 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[13]. Clock skew was adjusted for instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg[13].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.464 | TNS=-1566.284 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[12]. Clock skew was adjusted for instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg[12].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.463 | TNS=-1566.550 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[8]. Clock skew was adjusted for instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg[8].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.460 | TNS=-1562.770 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[14]. Clock skew was adjusted for instance system_i/pblaze_s_2/U0/cordic_v1/mult1_reg[14].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.451 | TNS=-1562.210 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[15]. Clock skew was adjusted for instance system_i/pblaze_s_1/U0/cordic_v1/mult1_reg[15].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.448 | TNS=-1562.980 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[1]. Clock skew was adjusted for instance system_i/pblaze_s_1/U0/cordic_v1/mult1_reg[1].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.444 | TNS=-1562.589 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[5]. Clock skew was adjusted for instance system_i/pblaze_s_1/U0/cordic_v1/mult1_reg[5].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_1/U0/cordic_v1/mult1_reg_n_0_[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.440 | TNS=-1555.005 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[15]. Clock skew was adjusted for instance system_i/pblaze_s_2/U0/cordic_v1/mult1_reg[15].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.426 | TNS=-1556.731 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[2]. Clock skew was adjusted for instance system_i/pblaze_s_2/U0/cordic_v1/mult1_reg[2].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.410 | TNS=-1557.249 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[16]. Clock skew was adjusted for instance system_i/pblaze_s_2/U0/cordic_v1/mult1_reg[16].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.408 | TNS=-1554.395 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[5]. Clock skew was adjusted for instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[5].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.408 | TNS=-1555.840 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[2]. Clock skew was adjusted for instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[2].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.408 | TNS=-1556.202 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[11]. Clock skew was adjusted for instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[11].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.407 | TNS=-1557.257 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[15]. Clock skew was adjusted for instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[15].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.404 | TNS=-1558.492 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[3]. Clock skew was adjusted for instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg[3].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult1_reg_n_0_[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.401 | TNS=-1558.549 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[9]_repN. Clock skew was adjusted for instance system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg[9]_replica.
+INFO: [Physopt 32-735] Processed net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult2_reg_n_0_[9]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.399 | TNS=-1558.585 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[3]. Clock skew was adjusted for instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[3].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.399 | TNS=-1558.910 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[6]. Clock skew was adjusted for instance system_i/pblaze_s_2/U0/cordic_v1/mult1_reg[6].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.399 | TNS=-1559.972 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-703] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[6]. Clock skew was adjusted for instance system_i/pblaze_s_0/U0/cordic_v1/mult1_reg[6].
+INFO: [Physopt 32-735] Processed net system_i/pblaze_s_0/U0/cordic_v1/mult1_reg_n_0_[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.396 | TNS=-1553.031 | WHS=0.024 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1_reg_n_0_[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1[31]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_2/U0/cordic_v1/plusOp__0[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_2/U0/cordic_v1/z[27]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/P[36]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/pblaze_s_2/U0/cordic_v1/mult1[31]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-4.396 | TNS=-1553.031 | WHS=0.024 | THS=0.000 |
+Phase 2 Critical Path Optimization | Checksum: 213fb563c
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:02:19 . Memory (MB): peak = 1852.910 ; gain = 22.531
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 1852.910 ; gain = 0.000
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=-4.396 | TNS=-1553.031 | WHS=0.024 | THS=0.000 |
+Ending Physical Synthesis Task | Checksum: 1e129ef9d
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:20 . Memory (MB): peak = 1852.910 ; gain = 22.531
+400 Infos, 121 Warnings, 140 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:03:14 ; elapsed = 00:02:24 . Memory (MB): peak = 1852.910 ; gain = 22.531
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 1852.910 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1/system_wrapper_postroute_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 1852.910 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 1852.910 ; gain = 0.000
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m04_nodes/m04_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m04_nodes/m04_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m04_nodes/m04_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m04_nodes/m04_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m04_nodes/m04_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m03_nodes/m03_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m03_nodes/m03_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m03_nodes/m03_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m03_nodes/m03_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m03_nodes/m03_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m02_nodes/m02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m02_nodes/m02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m02_nodes/m02_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m02_nodes/m02_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m02_nodes/m02_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+Command: write_bitstream -force system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010-clg400'
+Running DRC as a precondition to command write_bitstream
+Command: report_drc (run_mandatory_drcs) for: bitstream_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_0/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_1/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage system_i/pblaze_s_2/U0/cordic_v1/mult_gen/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg_reg[31]_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg_reg[31]_i_1/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Breg_reg[31]_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Breg_reg[31]_i_1/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Breg_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Creg_reg[31]_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Creg_reg[31]_i_1/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Creg_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/data_path_loop[2].low_hwbuild.shift_rotate_flop_0[0] is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/in_port_reg[7]_i_2/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/in_port_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/rdy_tmp1_reg[0] is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/rdy_tmp2_reg[3]_i_1/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/rdy_tmp2_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/s_axi_rdata_reg[31]_i_2_n_0 is a gated clock net sourced by a combinational pin system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/s_axi_rdata_reg[31]_i_2/O, cell system_i/pblaze_m_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/s_axi_rdata_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_0/U0/kcpsm6_v1/data_path_loop[2].low_hwbuild.shift_rotate_flop_0[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_0/U0/kcpsm6_v1/in_port_reg[7]_i_2/O, cell system_i/pblaze_s_0/U0/kcpsm6_v1/in_port_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_0/U0/kcpsm6_v1/rdy_tmp1_reg[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_0/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1/O, cell system_i/pblaze_s_0/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_1/U0/kcpsm6_v1/data_path_loop[2].low_hwbuild.shift_rotate_flop_0[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_1/U0/kcpsm6_v1/in_port_reg[7]_i_2/O, cell system_i/pblaze_s_1/U0/kcpsm6_v1/in_port_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_1/U0/kcpsm6_v1/rdy_tmp1_reg[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_1/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1/O, cell system_i/pblaze_s_1/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_2/U0/kcpsm6_v1/data_path_loop[2].low_hwbuild.shift_rotate_flop_0[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_2/U0/kcpsm6_v1/in_port_reg[7]_i_2/O, cell system_i/pblaze_s_2/U0/kcpsm6_v1/in_port_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net system_i/pblaze_s_2/U0/kcpsm6_v1/rdy_tmp1_reg[0] is a gated clock net sourced by a combinational pin system_i/pblaze_s_2/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1/O, cell system_i/pblaze_s_2/U0/kcpsm6_v1/rdy_tmp2_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PLBUFGOPT-1] Non-Optimal connections to BUFG: A non-muxed BUFG system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG is driven by another global buffer system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG_replica. Remove non-muxed BUFG if it is not desired
+WARNING: [DRC PLBUFGOPT-1] Non-Optimal connections to BUFG: A non-muxed BUFG system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG_replica is driven by another global buffer system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG_replica_1. Remove non-muxed BUFG if it is not desired
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 62 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./system_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Jan  8 04:43:39 2018. For additional details about this file, please refer to the WebTalk help file at C:/XILINX/Vivado/2017.2/doc/webtalk_introduction.html.
+412 Infos, 216 Warnings, 141 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:59 ; elapsed = 00:00:48 . Memory (MB): peak = 2168.648 ; gain = 315.738
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  8 04:43:39 2018...

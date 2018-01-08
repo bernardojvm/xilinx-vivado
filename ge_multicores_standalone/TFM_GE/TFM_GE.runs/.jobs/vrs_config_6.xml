@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_pb_rdy_0_0_synth_1" LaunchDir="C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/system_pb_rdy_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_Processor_0_bram_0_synth_1" LaunchDir="C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/system_Processor_0_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_Processor_0_0_synth_1" LaunchDir="C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/system_Processor_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_pblaze_0_0_synth_1" LaunchDir="C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/system_pblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_pb_rdy_0_0_synth_1"/>
+		<Parent Id="system_Processor_0_bram_0_synth_1"/>
+		<Parent Id="system_Processor_0_0_synth_1"/>
+		<Parent Id="system_pblaze_0_0_synth_1"/>
+	</Run>
+</Runs>
+

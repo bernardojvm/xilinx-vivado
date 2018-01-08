@@ -1,0 +1,824 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Jan  8 04:29:33 2018
+# Process ID: 13836
+# Current directory: C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1
+# Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/system_wrapper.vds
+# Journal file: C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/xup/fpga_flow/TFMV2/ip_repo/pblaze_m_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/fpga_flow/TFMV2/pB_rdy'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/fpga_flow/TFMV2/pblaze_s'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:user:r_data:1.0' found within IP repository 'c:/xup/fpga_flow/TFMV2/ip_repo'.
+File in use: c:/xup/fpga_flow/TFMV2/ip_repo/rdata.xml
+File ignored: c:/xup/fpga_flow/TFMV2/ip_repo/r_data.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:user:r_data_rtl:1.0' found within IP repository 'c:/xup/fpga_flow/TFMV2/ip_repo'.
+File in use: c:/xup/fpga_flow/TFMV2/ip_repo/rdata_rtl.xml
+File ignored: c:/xup/fpga_flow/TFMV2/ip_repo/r_data_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/xup/fpga_flow/TFMV2/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XILINX/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_ps7_0_100M_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xlconcat_0_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_1' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_bram_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_bram_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xlconcat_0_1' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_xlconcat_0_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_0_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_bram_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_bram_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_1_1' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_1_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_2_bram_1' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_2_bram_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_bram_ctrl_3_bram_1' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_3_bram_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_cdma_0_2' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_axi_cdma_0_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found 'c:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/ip/system_auto_pc_0/stats.txt'. Please regenerate to continue.
+add_files: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 335.453 ; gain = 82.676
+Command: synth_design -top system_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19052 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 429.910 ; gain = 83.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_wrapper' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:45]
+INFO: [Synth 8-3491] module 'system' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:1103' bound to instance 'system_i' of component 'system' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'system' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:1138]
+INFO: [Synth 8-3491] module 'system_axi_bram_ctrl_0_1' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_0_1_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0' of component 'system_axi_bram_ctrl_0_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2314]
+INFO: [Synth 8-638] synthesizing module 'system_axi_bram_ctrl_0_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_0_1_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'system_axi_bram_ctrl_0_bram_0' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_0_bram_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_0_bram' of component 'system_axi_bram_ctrl_0_bram_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2357]
+INFO: [Synth 8-638] synthesizing module 'system_axi_bram_ctrl_0_bram_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_0_bram_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'system_axi_bram_ctrl_0_0' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_1' of component 'system_axi_bram_ctrl_0_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2376]
+INFO: [Synth 8-638] synthesizing module 'system_axi_bram_ctrl_0_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_0_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'system_axi_bram_ctrl_1_bram_0' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_1_bram_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_1_bram' of component 'system_axi_bram_ctrl_1_bram_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2419]
+INFO: [Synth 8-638] synthesizing module 'system_axi_bram_ctrl_1_bram_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_1_bram_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'system_axi_bram_ctrl_1_0' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_1_0_stub.vhdl:5' bound to instance 'axi_bram_ctrl_2' of component 'system_axi_bram_ctrl_1_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2438]
+INFO: [Synth 8-638] synthesizing module 'system_axi_bram_ctrl_1_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_1_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'system_axi_bram_ctrl_2_bram_1' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_2_bram_1_stub.vhdl:5' bound to instance 'axi_bram_ctrl_2_bram' of component 'system_axi_bram_ctrl_2_bram_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2481]
+INFO: [Synth 8-638] synthesizing module 'system_axi_bram_ctrl_2_bram_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_2_bram_1_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'system_axi_bram_ctrl_1_1' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_1_1_stub.vhdl:5' bound to instance 'axi_bram_ctrl_3' of component 'system_axi_bram_ctrl_1_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2500]
+INFO: [Synth 8-638] synthesizing module 'system_axi_bram_ctrl_1_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_1_1_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'system_axi_bram_ctrl_3_bram_1' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_3_bram_1_stub.vhdl:5' bound to instance 'axi_bram_ctrl_3_bram' of component 'system_axi_bram_ctrl_3_bram_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2543]
+INFO: [Synth 8-638] synthesizing module 'system_axi_bram_ctrl_3_bram_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_bram_ctrl_3_bram_1_stub.vhdl:25]
+WARNING: [Synth 8-5640] Port 'cdma_tvect_out' is missing in component declaration [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:1757]
+INFO: [Synth 8-3491] module 'system_axi_cdma_0_2' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_cdma_0_2_stub.vhdl:5' bound to instance 'axi_cdma_0' of component 'system_axi_cdma_0_2' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2562]
+INFO: [Synth 8-638] synthesizing module 'system_axi_cdma_0_2' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_cdma_0_2_stub.vhdl:61]
+INFO: [Synth 8-3491] module 'system_axi_smc_1' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_smc_1_stub.vhdl:5' bound to instance 'axi_smc' of component 'system_axi_smc_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2614]
+INFO: [Synth 8-638] synthesizing module 'system_axi_smc_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_axi_smc_1_stub.vhdl:211]
+INFO: [Synth 8-3491] module 'system_pb_rdy_0_1' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_pb_rdy_0_1_stub.vhdl:5' bound to instance 'pb_rdy_0' of component 'system_pb_rdy_0_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2817]
+INFO: [Synth 8-638] synthesizing module 'system_pb_rdy_0_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_pb_rdy_0_1_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'system_pblaze_m_0_1' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_pblaze_m_0_1_stub.vhdl:5' bound to instance 'pblaze_m_0' of component 'system_pblaze_m_0_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2823]
+INFO: [Synth 8-638] synthesizing module 'system_pblaze_m_0_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_pblaze_m_0_1_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'system_pblaze_s_0_0' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_pblaze_s_0_0_stub.vhdl:5' bound to instance 'pblaze_s_0' of component 'system_pblaze_s_0_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2859]
+INFO: [Synth 8-638] synthesizing module 'system_pblaze_s_0_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_pblaze_s_0_0_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'system_pblaze_s_1_1' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_pblaze_s_1_1_stub.vhdl:5' bound to instance 'pblaze_s_1' of component 'system_pblaze_s_1_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2881]
+INFO: [Synth 8-638] synthesizing module 'system_pblaze_s_1_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_pblaze_s_1_1_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'system_pblaze_s_2_1' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_pblaze_s_2_1_stub.vhdl:5' bound to instance 'pblaze_s_2' of component 'system_pblaze_s_2_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2903]
+INFO: [Synth 8-638] synthesizing module 'system_pblaze_s_2_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_pblaze_s_2_1_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'system_processing_system7_0_0' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'system_processing_system7_0_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:2925]
+INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_processing_system7_0_0_stub.vhdl:135]
+INFO: [Synth 8-638] synthesizing module 'system_ps7_0_axi_periph_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:623]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1H7AUOX' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1H7AUOX' (1#1) [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_4Y7TYO' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_4Y7TYO' (2#1) [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:157]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_11SE3QO' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:287]
+INFO: [Synth 8-3491] module 'system_auto_pc_0' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'system_auto_pc_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:470]
+INFO: [Synth 8-638] synthesizing module 'system_auto_pc_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_11SE3QO' (3#1) [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:287]
+INFO: [Synth 8-3491] module 'system_xbar_0' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'system_xbar_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:1036]
+INFO: [Synth 8-638] synthesizing module 'system_xbar_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'system_ps7_0_axi_periph_0' (4#1) [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:623]
+INFO: [Synth 8-3491] module 'system_rst_ps7_0_100M_0' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'system_rst_ps7_0_100M_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:3136]
+INFO: [Synth 8-638] synthesizing module 'system_rst_ps7_0_100M_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_xlconcat_0_0' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_xlconcat_0_0_stub.vhdl:5' bound to instance 'xlconcat_0' of component 'system_xlconcat_0_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:3149]
+INFO: [Synth 8-638] synthesizing module 'system_xlconcat_0_0' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_xlconcat_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'system_xlconcat_0_1' declared at 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_xlconcat_0_1_stub.vhdl:5' bound to instance 'xlconcat_1' of component 'system_xlconcat_0_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:3155]
+INFO: [Synth 8-638] synthesizing module 'system_xlconcat_0_1' [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/realtime/system_xlconcat_0_1_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'system' (5#1) [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system.vhd:1138]
+INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (6#1) [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:45]
+WARNING: [Synth 8-3331] design s00_couplers_imp_11SE3QO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_11SE3QO has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_4Y7TYO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_4Y7TYO has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_4Y7TYO has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_4Y7TYO has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1H7AUOX has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1H7AUOX has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1H7AUOX has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1H7AUOX has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 481.777 ; gain = 135.438
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 481.777 ; gain = 135.438
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc] for cell 'system_i/processing_system7_0'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc] for cell 'system_i/processing_system7_0'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp45/system_rst_ps7_0_100M_1_in_context.xdc] for cell 'system_i/rst_ps7_0_100M'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp45/system_rst_ps7_0_100M_1_in_context.xdc] for cell 'system_i/rst_ps7_0_100M'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp47/system_axi_smc_1_in_context.xdc] for cell 'system_i/axi_smc'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp47/system_axi_smc_1_in_context.xdc] for cell 'system_i/axi_smc'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp49/system_xlconcat_0_0_in_context.xdc] for cell 'system_i/xlconcat_0'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp49/system_xlconcat_0_0_in_context.xdc] for cell 'system_i/xlconcat_0'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp51/system_xbar_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp51/system_xbar_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/xbar'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp53/system_axi_bram_ctrl_0_1_in_context.xdc] for cell 'system_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp53/system_axi_bram_ctrl_0_1_in_context.xdc] for cell 'system_i/axi_bram_ctrl_0'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp55/system_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'system_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp55/system_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'system_i/axi_bram_ctrl_0_bram'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp57/system_xlconcat_0_1_in_context.xdc] for cell 'system_i/xlconcat_1'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp57/system_xlconcat_0_1_in_context.xdc] for cell 'system_i/xlconcat_1'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp59/system_axi_bram_ctrl_0_1_in_context.xdc] for cell 'system_i/axi_bram_ctrl_1'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp59/system_axi_bram_ctrl_0_1_in_context.xdc] for cell 'system_i/axi_bram_ctrl_1'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp61/system_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'system_i/axi_bram_ctrl_1_bram'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp61/system_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'system_i/axi_bram_ctrl_1_bram'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp63/system_pb_rdy_0_1_in_context.xdc] for cell 'system_i/pb_rdy_0'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp63/system_pb_rdy_0_1_in_context.xdc] for cell 'system_i/pb_rdy_0'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp65/system_axi_bram_ctrl_0_1_in_context.xdc] for cell 'system_i/axi_bram_ctrl_2'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp65/system_axi_bram_ctrl_0_1_in_context.xdc] for cell 'system_i/axi_bram_ctrl_2'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp67/system_axi_bram_ctrl_0_1_in_context.xdc] for cell 'system_i/axi_bram_ctrl_3'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp67/system_axi_bram_ctrl_0_1_in_context.xdc] for cell 'system_i/axi_bram_ctrl_3'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp69/system_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'system_i/axi_bram_ctrl_2_bram'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp69/system_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'system_i/axi_bram_ctrl_2_bram'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp71/system_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'system_i/axi_bram_ctrl_3_bram'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp71/system_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'system_i/axi_bram_ctrl_3_bram'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp73/system_axi_cdma_0_0_in_context.xdc] for cell 'system_i/axi_cdma_0'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp73/system_axi_cdma_0_0_in_context.xdc] for cell 'system_i/axi_cdma_0'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp75/system_pblaze_m_0_1_in_context.xdc] for cell 'system_i/pblaze_m_0'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp75/system_pblaze_m_0_1_in_context.xdc] for cell 'system_i/pblaze_m_0'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp77/system_pblaze_s_1_1_in_context.xdc] for cell 'system_i/pblaze_s_0'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp77/system_pblaze_s_1_1_in_context.xdc] for cell 'system_i/pblaze_s_0'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp79/system_pblaze_s_1_1_in_context.xdc] for cell 'system_i/pblaze_s_1'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp79/system_pblaze_s_1_1_in_context.xdc] for cell 'system_i/pblaze_s_1'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp81/system_pblaze_s_3_0_in_context.xdc] for cell 'system_i/pblaze_s_2'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp81/system_pblaze_s_3_0_in_context.xdc] for cell 'system_i/pblaze_s_2'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp83/system_auto_pc_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp83/system_auto_pc_0_in_context.xdc] for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_io[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:8]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:9]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:11]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:12]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:13]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_port[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:15]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:16]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:17]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:18]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:19]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:20]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:21]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/out_reg0[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:22]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset0'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:23]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/reset_reg_n_0'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:24]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:26]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:27]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:28]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:29]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:30]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:31]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/out_port[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:32]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/reset_reg'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:33]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_5'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:40]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_1'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:41]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_0'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:42]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_4'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:43]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_3'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:44]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_2'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:45]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_6'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:46]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/picoBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1/sy_or_kk_7'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:47]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_8'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:81]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[14]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:87]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[12]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:88]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[24]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:89]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[28]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:90]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:91]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[29]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[8]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:93]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[20]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:94]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[1]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:95]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[31]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[30]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:97]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[16]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:98]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[23]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:99]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[5]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[17]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:101]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[10]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:102]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:103]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:104]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[9]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:105]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[11]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:106]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[13]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:107]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[22]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:108]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[27]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:109]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:110]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[21]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:111]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[18]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:112]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[19]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:113]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[15]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:114]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[26]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:115]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:116]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/x_tmp[25]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:117]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/rdy_tmp2'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:118]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[29]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:121]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[31]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:122]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[12]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:123]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_5'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:124]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[19]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:125]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:126]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[4]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:127]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[20]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:128]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[26]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:129]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg_reg_n_0_[3]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:130]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[12]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:131]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_6'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:132]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[11]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:133]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[18]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:134]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[21]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:135]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:136]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[24]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:137]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:138]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[15]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:139]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg_reg_n_0_[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:140]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[8]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:141]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[16]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:142]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_11'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:143]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/kcpsm6_v1_n_9'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:144]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[2]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:145]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[10]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:146]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg_reg_n_0_[7]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:148]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/cordic_v1/y_tmp[25]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:149]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[23]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:150]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/in_Areg_reg_n_0_[6]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:151]
+WARNING: [Vivado 12-507] No nets matched 'system_i/pBlaze_0/U0/pBlaze_v1_0_S_AXI_inst/Proccesor_v1/z_ip_reg_n_0_[0]'. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:152]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc:152]
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/system_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.srcs/constrs_1/imports/Desktop/zybo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 783.254 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'system_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'system_i/axi_bram_ctrl_1_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'system_i/axi_bram_ctrl_2_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'system_i/axi_bram_ctrl_3_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 783.254 ; gain = 436.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 783.254 ; gain = 436.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/.Xil/Vivado-13836-Berna/dcp43/system_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property DONT_TOUCH = true for system_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_bram_ctrl_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_bram_ctrl_1_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_bram_ctrl_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_bram_ctrl_2_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_bram_ctrl_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_bram_ctrl_3_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_cdma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_smc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/pb_rdy_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/pblaze_m_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/pblaze_s_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/pblaze_s_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/pblaze_s_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/xlconcat_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 783.254 ; gain = 436.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 783.254 ; gain = 436.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design system_ps7_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design system_ps7_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design system_ps7_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design system_ps7_0_axi_periph_0 has unconnected port M01_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 783.254 ; gain = 436.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/processing_system7_0/FCLK_CLK0' to pin 'system_i/processing_system7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/axi_bram_ctrl_0/bram_clk_a' to pin 'system_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/axi_bram_ctrl_1/bram_clk_a' to pin 'system_i/axi_bram_ctrl_1/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/axi_bram_ctrl_2/bram_clk_a' to pin 'system_i/axi_bram_ctrl_2/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/axi_bram_ctrl_3/bram_clk_a' to pin 'system_i/axi_bram_ctrl_3/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 785.879 ; gain = 439.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 786.102 ; gain = 439.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 797.707 ; gain = 451.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 797.707 ; gain = 451.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 797.707 ; gain = 451.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 797.707 ; gain = 451.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 797.707 ; gain = 451.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 797.707 ; gain = 451.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 797.707 ; gain = 451.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |system_xbar_0                 |         1|
+|2     |system_auto_pc_0              |         1|
+|3     |system_axi_bram_ctrl_0_1      |         1|
+|4     |system_axi_bram_ctrl_0_bram_0 |         1|
+|5     |system_axi_bram_ctrl_0_0      |         1|
+|6     |system_axi_bram_ctrl_1_bram_0 |         1|
+|7     |system_axi_bram_ctrl_1_0      |         1|
+|8     |system_axi_bram_ctrl_2_bram_1 |         1|
+|9     |system_axi_bram_ctrl_1_1      |         1|
+|10    |system_axi_bram_ctrl_3_bram_1 |         1|
+|11    |system_axi_cdma_0_2           |         1|
+|12    |system_axi_smc_1              |         1|
+|13    |system_pb_rdy_0_1             |         1|
+|14    |system_pblaze_m_0_1           |         1|
+|15    |system_pblaze_s_0_0           |         1|
+|16    |system_pblaze_s_1_1           |         1|
+|17    |system_pblaze_s_2_1           |         1|
+|18    |system_processing_system7_0_0 |         1|
+|19    |system_rst_ps7_0_100M_0       |         1|
+|20    |system_xlconcat_0_0           |         1|
+|21    |system_xlconcat_0_1           |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |system_auto_pc_0_bbox              |     1|
+|2     |system_axi_bram_ctrl_0_0_bbox      |     1|
+|3     |system_axi_bram_ctrl_0_1_bbox      |     1|
+|4     |system_axi_bram_ctrl_0_bram_0_bbox |     1|
+|5     |system_axi_bram_ctrl_1_0_bbox      |     1|
+|6     |system_axi_bram_ctrl_1_1_bbox      |     1|
+|7     |system_axi_bram_ctrl_1_bram_0_bbox |     1|
+|8     |system_axi_bram_ctrl_2_bram_1_bbox |     1|
+|9     |system_axi_bram_ctrl_3_bram_1_bbox |     1|
+|10    |system_axi_cdma_0_2_bbox           |     1|
+|11    |system_axi_smc_1_bbox              |     1|
+|12    |system_pb_rdy_0_1_bbox             |     1|
+|13    |system_pblaze_m_0_1_bbox           |     1|
+|14    |system_pblaze_s_0_0_bbox           |     1|
+|15    |system_pblaze_s_1_1_bbox           |     1|
+|16    |system_pblaze_s_2_1_bbox           |     1|
+|17    |system_processing_system7_0_0_bbox |     1|
+|18    |system_rst_ps7_0_100M_0_bbox       |     1|
+|19    |system_xbar_0_bbox                 |     1|
+|20    |system_xlconcat_0_0_bbox           |     1|
+|21    |system_xlconcat_0_1_bbox           |     1|
+|22    |OBUF                               |     5|
++------+-----------------------------------+------+
+
+Report Instance Areas: 
++------+---------------------+--------------------------+------+
+|      |Instance             |Module                    |Cells |
++------+---------------------+--------------------------+------+
+|1     |top                  |                          |  2897|
+|2     |  system_i           |system                    |  2892|
+|3     |    ps7_0_axi_periph |system_ps7_0_axi_periph_0 |   440|
+|4     |      s00_couplers   |s00_couplers_imp_11SE3QO  |   177|
++------+---------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 797.707 ; gain = 451.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 797.707 ; gain = 149.891
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 797.707 ; gain = 451.367
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+76 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 805.254 ; gain = 469.801
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'C:/xup/fpga_flow/TFMV2/TFM_GE/TFM_GE.runs/synth_1/system_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 805.516 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  8 04:30:52 2018...

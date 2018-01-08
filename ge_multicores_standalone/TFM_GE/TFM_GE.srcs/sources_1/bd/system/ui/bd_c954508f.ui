@@ -1,0 +1,71 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 60 -defaultsOSRD
+preplace port data_r -pg 1 -y 550 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 80 -defaultsOSRD
+preplace inst axi_bram_ctrl_2_bram -pg 1 -lvl 9 -y 720 -defaultsOSRD
+preplace inst axi_bram_ctrl_2 -pg 1 -lvl 4 -y 670 -defaultsOSRD
+preplace inst axi_bram_ctrl_3 -pg 1 -lvl 4 -y 800 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 7 -y 440 -defaultsOSRD
+preplace inst axi_bram_ctrl_3_bram -pg 1 -lvl 10 -y 480 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 3 -y 480 -defaultsOSRD
+preplace inst axi_cdma_0 -pg 1 -lvl 2 -y 350 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -y 330 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 1 -y 490 -defaultsOSRD
+preplace inst pblaze_m_0 -pg 1 -lvl 6 -y 550 -defaultsOSRD
+preplace inst pblaze_s_0 -pg 1 -lvl 7 -y 570 -defaultsOSRD
+preplace inst pb_rdy_0 -pg 1 -lvl 2 -y 480 -defaultsOSRD
+preplace inst pblaze_s_1 -pg 1 -lvl 8 -y 570 -defaultsOSRD
+preplace inst axi_bram_ctrl_1_bram -pg 1 -lvl 8 -y 390 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 5 -y 220 -defaultsOSRD
+preplace inst pblaze_s_2 -pg 1 -lvl 9 -y 570 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 4 -y 490 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 310 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 4 -y 360 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -y 140 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 4 7 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc pblaze_s_2_data_r 1 9 2 NJ 550 NJ
+preplace netloc pblaze_m_0_bram 1 6 1 2110
+preplace netloc axi_cdma_0_M_AXI 1 2 1 700
+preplace netloc axi_smc_M02_AXI 1 3 1 1040
+preplace netloc axi_smc_M01_AXI 1 3 1 1020
+preplace netloc pblaze_s_1_data_r 1 8 1 N
+preplace netloc pblaze_s_0_bram 1 7 1 2350
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 4 3 NJ 490 1840J 480 2100
+preplace netloc processing_system7_0_M_AXI_GP0 1 4 1 1540
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 8 400 540 730 610 1050 560 1530 560 1880 630 2130 660 2380 660 2610J
+preplace netloc pblaze_s_2_bram 1 9 1 2860
+preplace netloc axi_smc_M00_AXI 1 3 1 1010
+preplace netloc xlconcat_1_dout 1 1 1 390
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 5 20 210 420J 270 NJ 270 1040J 280 1510
+preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 4 5 1520 700 NJ 700 NJ 700 NJ 700 NJ
+preplace netloc pblaze_s_0_data_r 1 7 1 N
+preplace netloc ps7_0_axi_periph_M01_AXI 1 5 1 1880
+preplace netloc pblaze_s_0_pB_rdy 1 0 8 20 580 NJ 580 NJ 580 NJ 580 NJ 580 1860J 640 NJ 640 2350
+preplace netloc axi_cdma_0_cdma_introut 1 2 1 690
+preplace netloc pblaze_s_1_pB_rdy 1 0 9 30 590 NJ 590 NJ 590 NJ 590 NJ 590 1850J 650 2110J 670 2370J 640 2600
+preplace netloc xlconcat_0_dout 1 3 1 1020
+preplace netloc processing_system7_0_FIXED_IO 1 4 7 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 4 6 NJ 800 NJ 800 NJ 800 NJ 800 NJ 800 2870
+preplace netloc pblaze_s_1_bram 1 8 1 2620
+preplace netloc pb_rdy_0_rdy_out 1 2 1 710
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 10 40 220 410 550 720 390 1030 290 1540 360 1870 470 2120 650 2360 650 2630 640 2880
+preplace netloc pblaze_m_0_r_data 1 6 1 N
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 5 430 10 NJ 10 NJ 10 NJ 10 1880
+preplace netloc axi_smc_M04_AXI 1 3 1 1010
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 4 4 1510 370 NJ 370 NJ 370 NJ
+preplace netloc axi_smc_M03_AXI 1 3 1 1020
+preplace netloc pblaze_s_2_pB_rdy 1 0 10 40 600 NJ 600 NJ 600 NJ 600 NJ 600 1840J 660 2100J 680 2380J 670 2640J 650 2860
+preplace netloc pblaze_m_0_pB_rdy 1 0 7 40 400 380J 560 710J 570 NJ 570 NJ 570 1870J 620 2100
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 4 380 260 NJ 260 1050J 270 1520J
+levelinfo -pg 1 0 210 560 870 1280 1690 1990 2240 2490 2750 2980 3100 -top 0 -bot 870
+",
+}
+{
+   da_axi4_cnt: "62",
+   da_board_cnt: "2",
+   da_bram_cntlr_cnt: "38",
+   da_clkrst_cnt: "92",
+   da_ps7_cnt: "1",
+}
