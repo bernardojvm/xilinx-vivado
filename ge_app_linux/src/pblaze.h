@@ -1,0 +1,23 @@
+/*
+ * pblaze.h
+ *
+ *  Created on: 8 ene. 2018
+ *      Author: petalinux
+ */
+
+#ifndef SRC_PBLAZE_H_
+#define SRC_PBLAZE_H_
+
+#define DEVICE_FILE_NAME "/dev/pblaze_Dev"
+#define IOCTL_REG_A _IOR(100, 0, char *)
+#define IOCTL_REG_B _IOR(100, 1, char *)
+#define IOCTL_REG_R _IOR(100, 2, char *)
+#define IOCTL_CTRL_REG _IOR(100, 3, char *)
+#define IOCTL_INT_ON _IOR(100, 4, char *)
+#define IOCTL_INT_OFF _IOR(100, 5, char *)
+
+void write_pblaze(int file,unsigned int ioctl_num, int buffer_int);
+unsigned long read_pblaze(int file,unsigned int ioctl_num);
+
+
+#endif /* SRC_PBLAZE_H_ */
