@@ -115,7 +115,7 @@ static ssize_t device_read(	struct file *file,
 	u32 data_value;
 	char pblaze_value[16];
 	data_value = ioread32(base_addr);
-	printk(KERN_INFO "leer:(%d)\n",data_value);
+//	printk(KERN_INFO "leer:(%d)\n",data_value);
 	sprintf(pblaze_value, "%x",data_value);
 	rmb();
 	if (copy_to_user(buffer,pblaze_value, length)){
@@ -139,7 +139,7 @@ static ssize_t device_write(	struct file *file,
 		return -EFAULT;
   	data_value = simple_strtoul(pblaze_value, NULL, 16);
         wmb(); //previene reordenamiento
-	printk(KERN_INFO "escribir:(%d)\n",data_value);
+//	printk(KERN_INFO "escribir:(%d)\n",data_value);
 	iowrite32(data_value,base_addr);		
 	return SUCCESS;
 }
@@ -168,29 +168,29 @@ long device_ioctl(struct file *file, /* ditto *///SELECCIONAR EL REGISTRO A ESCR
 	case IOCTL_REG_A:
 		temp = (char *)ioctl_param;
 		base_addr=pblaze_rega;
-		printk(KERN_INFO "direccionA(%p) %x\n",base_addr,ioctl_param);
+//		printk(KERN_INFO "direccionA(%p) %x\n",base_addr,ioctl_param);
 	break;
 	case IOCTL_REG_B:
 		temp = (char *)ioctl_param;
 		base_addr=pblaze_regb;
-		printk(KERN_INFO "direccionB(%p) %x\n",base_addr,ioctl_param);
+//		printk(KERN_INFO "direccionB(%p) %x\n",base_addr,ioctl_param);
 	break;
 	case IOCTL_REG_R:
 		temp = (char *)ioctl_param;
 		base_addr=pblaze_regr;
-		printk(KERN_INFO "direccionR(%p) %x\n",base_addr,ioctl_param);
+//		printk(KERN_INFO "direccionR(%p) %x\n",base_addr,ioctl_param);
 	break;
 	case IOCTL_CTRL_REG:
 		temp = (char *)ioctl_param;
 		base_addr=pblaze_ctrl;
-		printk(KERN_INFO "direccionctrl(%p) %x\n",base_addr,ioctl_param);
+//		printk(KERN_INFO "direccionctrl(%p) %x\n",base_addr,ioctl_param);
 	break;
 	case IOCTL_INT_ON:
-		printk(KERN_INFO "Espera de Interrupcion:%d\n",irq_value);
+//		printk(KERN_INFO "Espera de Interrupcion:%d\n",irq_value);
 		return irq_ioctl;
 	break;
 	case IOCTL_INT_OFF:
-		printk(KERN_INFO "Interrupcion reconocida\n");
+//		printk(KERN_INFO "Interrupcion reconocida\n");
 		irq_ioctl=0;
 	break;
 	
@@ -243,7 +243,7 @@ struct pblaze_local {
 
 static irqreturn_t pblaze_irq(int irq, void *lp)
 {
-	printk(KERN_INFO "Execute pblaze interrupt\n");
+//	printk(KERN_INFO "Execute pblaze interrupt\n");
 	irq_ioctl=1;
 	return IRQ_HANDLED;
 }
